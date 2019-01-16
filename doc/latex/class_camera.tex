@@ -1,0 +1,70 @@
+\hypertarget{class_camera}{}\section{Référence de la classe Camera}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+hérite du class \mbox{\hyperlink{class_rectangle}{Rectangle}} cette classe permet de afficher que les objet sur la camera  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_ab01f0ff58d8ebd0ffbe27f62a9a9e3ac}{Camera}} (const Vec2 \&\+\_\+pos\+Min=Vec2(0, 0), unsigned int w=1, unsigned int h=1)
+\item 
+\mbox{\Hypertarget{class_camera_a9afa00681d1ad6e1c27e1a57f2f9fa3b}\label{class_camera_a9afa00681d1ad6e1c27e1a57f2f9fa3b}} 
+{\bfseries Camera} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&rec, Vec2 $\ast$c)
+\item 
+\mbox{\Hypertarget{class_camera_a6bc12c73b564c99186eb085e23ba733c}\label{class_camera_a6bc12c73b564c99186eb085e23ba733c}} 
+Vec2 $\ast$ {\bfseries get\+Cam\+Cercle} ()
+\item 
+\mbox{\Hypertarget{class_camera_a6f7f884d3b0765cdbbce3edce865f15f}\label{class_camera_a6f7f884d3b0765cdbbce3edce865f15f}} 
+Vec2 {\bfseries get\+Cam\+Pos} () const
+\item 
+\mbox{\Hypertarget{class_camera_a23e1db806a30ed408267108b30b030f4}\label{class_camera_a23e1db806a30ed408267108b30b030f4}} 
+Vec2 \& {\bfseries get\+Pos\+Ref} ()
+\item 
+\mbox{\Hypertarget{class_camera_a5d2e17beaf1533caf8726b576c32ec94}\label{class_camera_a5d2e17beaf1533caf8726b576c32ec94}} 
+bool {\bfseries est\+Dans\+La\+Camera} (const \mbox{\hyperlink{class_cercle}{Cercle}} \&) const
+\item 
+\mbox{\Hypertarget{class_camera_a2ee4df62243f38013fdfbb5aa08282d7}\label{class_camera_a2ee4df62243f38013fdfbb5aa08282d7}} 
+bool {\bfseries est\+Dans\+La\+Camera} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&) const
+\item 
+\mbox{\Hypertarget{class_camera_a8f888f5b620bd332c88bd49dfaaa1574}\label{class_camera_a8f888f5b620bd332c88bd49dfaaa1574}} 
+void \mbox{\hyperlink{class_camera_a8f888f5b620bd332c88bd49dfaaa1574}{set\+Pos}} (Vec2 $\ast$)
+\begin{DoxyCompactList}\small\item\em prends un pointeur comme la posiotion de camera on va l\textquotesingle{}utiliser pour mettre l\textquotesingle{}addresse de la position d\textquotesingle{}un cercle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_camera_a2c0a2712a6f8cbe29a9f4ede68bf828f}\label{class_camera_a2c0a2712a6f8cbe29a9f4ede68bf828f}} 
+void {\bfseries reste\+Dans\+Le\+Terrain} (const \mbox{\hyperlink{class_terrain}{Terrain}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_a78d509eb873c55a2f530c7a2db318359}\label{class_camera_a78d509eb873c55a2f530c7a2db318359}} 
+Vec2 $\ast$ {\bfseries Cam\+Cercle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+hérite du class \mbox{\hyperlink{class_rectangle}{Rectangle}} cette classe permet de afficher que les objet sur la camera 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_camera_ab01f0ff58d8ebd0ffbe27f62a9a9e3ac}\label{class_camera_ab01f0ff58d8ebd0ffbe27f62a9a9e3ac}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const Vec2 \&}]{\+\_\+pos\+Min = {\ttfamily Vec2(0,0)},  }\item[{unsigned int}]{w = {\ttfamily 1},  }\item[{unsigned int}]{h = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+une camera avec la position pos\+Min, largeur et hauteur w et h en utilisant le constructeur du \mbox{\hyperlink{class_rectangle}{Rectangle}} 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/core/Camera.\+h\item 
+src/core/Camera.\+cpp\end{DoxyCompactItemize}

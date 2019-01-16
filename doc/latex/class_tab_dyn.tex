@@ -1,0 +1,79 @@
+\hypertarget{class_tab_dyn}{}\section{Référence du modèle de la classe Tab\+Dyn$<$ T $>$}
+\label{class_tab_dyn}\index{Tab\+Dyn$<$ T $>$@{Tab\+Dyn$<$ T $>$}}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a24d80afe7593c82ec106d43684a2d188}\label{class_tab_dyn_a24d80afe7593c82ec106d43684a2d188}} 
+T {\bfseries elementI} (unsigned int indice) const
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a30c1fe4f663161624e1138821c847b90}\label{class_tab_dyn_a30c1fe4f663161624e1138821c847b90}} 
+void {\bfseries ajouter\+Element} (const T \&)
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a61cd5aeb1186bd7e37d5777e2d24e9e3}\label{class_tab_dyn_a61cd5aeb1186bd7e37d5777e2d24e9e3}} 
+unsigned int {\bfseries taille\+\_\+utilise} () const
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a554b655e742b69653de45da760941474}\label{class_tab_dyn_a554b655e742b69653de45da760941474}} 
+void {\bfseries trier} ()
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a0bc6df9417462c573617d6b09a048426}\label{class_tab_dyn_a0bc6df9417462c573617d6b09a048426}} 
+void {\bfseries supprimer\+ElementI} (unsigned int indice)
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a383e37b33119227258564ccd052ffe74}\label{class_tab_dyn_a383e37b33119227258564ccd052ffe74}} 
+void {\bfseries afficher\+Tab} () const
+\item 
+\mbox{\Hypertarget{class_tab_dyn_ad76fed652f27c5833c78db659abc291c}\label{class_tab_dyn_ad76fed652f27c5833c78db659abc291c}} 
+void \mbox{\hyperlink{class_tab_dyn_ad76fed652f27c5833c78db659abc291c}{sauver\+Tab}} (const std\+::string \&chemin)
+\begin{DoxyCompactList}\small\item\em sauvgarde le tableau en vidant le ficher dans le ficher passé en parametre \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tab_dyn_a0691ddc682fa501ce7dbd0a7d1f9e261}\label{class_tab_dyn_a0691ddc682fa501ce7dbd0a7d1f9e261}} 
+void \mbox{\hyperlink{class_tab_dyn_a0691ddc682fa501ce7dbd0a7d1f9e261}{charger\+Tab}} (const std\+::string \&chemin)
+\begin{DoxyCompactList}\small\item\em charge le tableau à partir du ficher. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tab_dyn_acfc88ef40cb66400e9dd2ff120b5273a}{sauver\+Tab}} (int fd)
+\begin{DoxyCompactList}\small\item\em sauvgarde le tableau dans le descripteur du ficher. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tab_dyn_acd5db90f6eb28d32314e91586d43b1a3}{charger\+Tab}} (int fd)
+\begin{DoxyCompactList}\small\item\em charge le tableau à partir du descripteur du ficher. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tab_dyn_a5cc36063858ffd2fabb9b87aa04ae10b}\label{class_tab_dyn_a5cc36063858ffd2fabb9b87aa04ae10b}} 
+std\+::vector$<$ T $>$ {\bfseries elements}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_tab_dyn_acd5db90f6eb28d32314e91586d43b1a3}\label{class_tab_dyn_acd5db90f6eb28d32314e91586d43b1a3}} 
+\index{Tab\+Dyn@{Tab\+Dyn}!charger\+Tab@{charger\+Tab}}
+\index{charger\+Tab@{charger\+Tab}!Tab\+Dyn@{Tab\+Dyn}}
+\subsubsection{\texorpdfstring{charger\+Tab()}{chargerTab()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_tab_dyn}{Tab\+Dyn}}$<$ T $>$\+::charger\+Tab (\begin{DoxyParamCaption}\item[{int}]{fd }\end{DoxyParamCaption})}
+
+
+
+charge le tableau à partir du descripteur du ficher. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em le} & descripteur du ficher peut être un socket ou pipe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tab_dyn_acfc88ef40cb66400e9dd2ff120b5273a}\label{class_tab_dyn_acfc88ef40cb66400e9dd2ff120b5273a}} 
+\index{Tab\+Dyn@{Tab\+Dyn}!sauver\+Tab@{sauver\+Tab}}
+\index{sauver\+Tab@{sauver\+Tab}!Tab\+Dyn@{Tab\+Dyn}}
+\subsubsection{\texorpdfstring{sauver\+Tab()}{sauverTab()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_tab_dyn}{Tab\+Dyn}}$<$ T $>$\+::sauver\+Tab (\begin{DoxyParamCaption}\item[{int}]{fd }\end{DoxyParamCaption})}
+
+
+
+sauvgarde le tableau dans le descripteur du ficher. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em le} & descripteur du ficher peut être un socket ou pipe \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/base/Tab\+Dyn.\+h\end{DoxyCompactItemize}

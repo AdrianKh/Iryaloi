@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Iryal.io:  Fichier source de src/core/Joueur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Iryal.io
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Joueur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Mur.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Vec2.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Cercle.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Camera.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Rectangle.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;cstring&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_joueur.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_joueur.html">Joueur</a>{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::vector&lt;Cercle&gt; cercles;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_camera.html">Camera</a> cam;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_rectangle.html">Rectangle</a> miniTerrain;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> score;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_image.html">Image</a> im;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Vec2 tmp_cam;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_joueur.html">Joueur</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_joueur.html">Joueur</a>(<span class="keyword">const</span> Vec2 &amp;pos ,<span class="keywordtype">int</span> r );</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_joueur.html#a9fb594f755601ee77ce5884c4c0861f3">   26</a></span>&#160;    <a class="code" href="class_joueur.html#a9fb594f755601ee77ce5884c4c0861f3">~Joueur</a>(){};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> init();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_score() <span class="keyword">const</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> add_score(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;Cercle&gt; &amp; getTabCercle();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">float</span> getscore(){<span class="keywordflow">return</span> score;}</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_camera.html">Camera</a> &amp; getCam(){<span class="keywordflow">return</span> cam;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//le joueur a la possibilité de choisir une image qui le represente </span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string getImage()<span class="keyword"> const</span>{<span class="keywordflow">return</span> im.<a class="code" href="class_image.html#aba8f03a51b8b00ca960f20b6815e558f">get_lien</a>();}</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setImage(<span class="keyword">const</span> std::string &amp; s) {im.<a class="code" href="class_image.html#a01e7f7086e157349f449e0f3f1843d86">set_lien</a>(s);}</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> deplacerJoueur(<span class="keyword">const</span> Vec2&amp; direction);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> collision(<span class="keyword">const</span> <a class="code" href="class_terrain.html">Terrain</a> &amp;);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//pour la collision entre le mur et tous les cerles du joueur</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> collision(<span class="keyword">const</span> <a class="code" href="class_mur.html">Mur</a> &amp;);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_joueur.html#aa43300b65ed3d7254b0d1afabf5b8ce3">actionCercle</a>(<a class="code" href="class_cercle.html">Cercle</a> &amp;);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joueur.html#a00d886b1357bfb274384ec99ecc24fd3">actionJoueur</a>(<a class="code" href="class_joueur.html">Joueur</a> &amp;);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> moveUp();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> moveDown();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> moveLeft();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> moveRight();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> sauver(<span class="keywordtype">int</span> fd) <span class="keyword">const</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> charger(<span class="keywordtype">int</span> fd);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joueur.html#aa4e3150791b3a072a894e83ad423aa59">diviser</a>();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joueur.html#ae1ac0277d6bc778a594290ac8ddbda2e">fussionner</a>();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joueur.html#ab37bf9dea93f89ed59a8103aa9a4ec00">collision_entre_cercles</a>();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="class_joueur.html#a00f152a998b74e4af04a0637fd8523e7">all_zero</a>(<span class="keywordtype">int</span> &amp; n);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_joueur.html#a8a9d40530e242a8b7b039d93005dba63">update_cam</a>();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div><div class="ttc" id="class_terrain_html"><div class="ttname"><a href="class_terrain.html">Terrain</a></div><div class="ttdoc">un terrain possède une position, un largeur et une hauteur. </div><div class="ttdef"><b>Definition:</b> Terrain.h:12</div></div>
+<div class="ttc" id="class_joueur_html_a9fb594f755601ee77ce5884c4c0861f3"><div class="ttname"><a href="class_joueur.html#a9fb594f755601ee77ce5884c4c0861f3">Joueur::~Joueur</a></div><div class="ttdeci">~Joueur()</div><div class="ttdoc">par default </div><div class="ttdef"><b>Definition:</b> Joueur.h:26</div></div>
+<div class="ttc" id="class_image_html_a01e7f7086e157349f449e0f3f1843d86"><div class="ttname"><a href="class_image.html#a01e7f7086e157349f449e0f3f1843d86">Image::set_lien</a></div><div class="ttdeci">void set_lien(const std::string &amp;_lien)</div><div class="ttdoc">met à jour le lien vers l&amp;#39;image </div><div class="ttdef"><b>Definition:</b> Image.cpp:26</div></div>
+<div class="ttc" id="class_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:10</div></div>
+<div class="ttc" id="class_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdoc">la classe contoent le lien vers une image dans une chaine de tableau </div><div class="ttdef"><b>Definition:</b> Image.h:8</div></div>
+<div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">hérite du class Rectangle cette classe permet de afficher que les objet sur la camera ...</div><div class="ttdef"><b>Definition:</b> Camera.h:11</div></div>
+<div class="ttc" id="class_joueur_html_a8a9d40530e242a8b7b039d93005dba63"><div class="ttname"><a href="class_joueur.html#a8a9d40530e242a8b7b039d93005dba63">Joueur::update_cam</a></div><div class="ttdeci">void update_cam()</div><div class="ttdoc">met à jours la camera de joueur </div><div class="ttdef"><b>Definition:</b> Joueur.cpp:218</div></div>
+<div class="ttc" id="class_mur_html"><div class="ttname"><a href="class_mur.html">Mur</a></div><div class="ttdef"><b>Definition:</b> Mur.h:7</div></div>
+<div class="ttc" id="class_joueur_html"><div class="ttname"><a href="class_joueur.html">Joueur</a></div><div class="ttdef"><b>Definition:</b> Joueur.h:14</div></div>
+<div class="ttc" id="class_joueur_html_aa43300b65ed3d7254b0d1afabf5b8ce3"><div class="ttname"><a href="class_joueur.html#aa43300b65ed3d7254b0d1afabf5b8ce3">Joueur::actionCercle</a></div><div class="ttdeci">bool actionCercle(Cercle &amp;)</div><div class="ttdoc">l&amp;#39;action néccéssaire en de collision avec un cercle. ex: manger un cercle si c&amp;#39;est plus petit / rajou...</div><div class="ttdef"><b>Definition:</b> Joueur.cpp:73</div></div>
+<div class="ttc" id="class_image_html_aba8f03a51b8b00ca960f20b6815e558f"><div class="ttname"><a href="class_image.html#aba8f03a51b8b00ca960f20b6815e558f">Image::get_lien</a></div><div class="ttdeci">std::string get_lien() const</div><div class="ttdoc">retourne le lien </div><div class="ttdef"><b>Definition:</b> Image.cpp:34</div></div>
+<div class="ttc" id="class_joueur_html_a00d886b1357bfb274384ec99ecc24fd3"><div class="ttname"><a href="class_joueur.html#a00d886b1357bfb274384ec99ecc24fd3">Joueur::actionJoueur</a></div><div class="ttdeci">void actionJoueur(Joueur &amp;)</div><div class="ttdoc">fait l&amp;#39;action néccésaire pour le jeu en ligne </div><div class="ttdef"><b>Definition:</b> Joueur.cpp:196</div></div>
+<div class="ttc" id="class_joueur_html_ab37bf9dea93f89ed59a8103aa9a4ec00"><div class="ttname"><a href="class_joueur.html#ab37bf9dea93f89ed59a8103aa9a4ec00">Joueur::collision_entre_cercles</a></div><div class="ttdeci">void collision_entre_cercles()</div><div class="ttdoc">gére les collision entre ses propre cercle </div><div class="ttdef"><b>Definition:</b> Joueur.cpp:151</div></div>
+<div class="ttc" id="class_joueur_html_a00f152a998b74e4af04a0637fd8523e7"><div class="ttname"><a href="class_joueur.html#a00f152a998b74e4af04a0637fd8523e7">Joueur::all_zero</a></div><div class="ttdeci">bool all_zero(int &amp;n)</div><div class="ttdoc">retourne vraie si tous les cerles du joueur ont r = 0 ou il n&amp;#39;y a aucun cercle et dans int n met le q...</div><div class="ttdef"><b>Definition:</b> Joueur.cpp:202</div></div>
+<div class="ttc" id="class_joueur_html_ae1ac0277d6bc778a594290ac8ddbda2e"><div class="ttname"><a href="class_joueur.html#ae1ac0277d6bc778a594290ac8ddbda2e">Joueur::fussionner</a></div><div class="ttdeci">void fussionner()</div><div class="ttdoc">fussionne les cercles deux par deux. </div><div class="ttdef"><b>Definition:</b> Joueur.cpp:172</div></div>
+<div class="ttc" id="class_cercle_html"><div class="ttname"><a href="class_cercle.html">Cercle</a></div><div class="ttdef"><b>Definition:</b> Cercle.h:9</div></div>
+<div class="ttc" id="class_joueur_html_aa4e3150791b3a072a894e83ad423aa59"><div class="ttname"><a href="class_joueur.html#aa4e3150791b3a072a894e83ad423aa59">Joueur::diviser</a></div><div class="ttdeci">void diviser()</div><div class="ttdoc">divise tous les cercles en deux si le rayon &gt; 50 </div><div class="ttdef"><b>Definition:</b> Joueur.cpp:115</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

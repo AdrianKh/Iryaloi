@@ -1,0 +1,65 @@
+\hypertarget{class_mur}{}\section{Référence de la classe Mur}
+\label{class_mur}\index{Mur@{Mur}}
+Graphe d\textquotesingle{}héritage de Mur\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mur}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mur_a52a18f3a0baad70fb413f39e3d29c5a3}{Mur}} (const Vec2 \&\+\_\+pos\+Min=Vec2(0, 0), unsigned int w=1, unsigned int h=1)
+\begin{DoxyCompactList}\small\item\em retoune un entier pour dire dans quelle coté la coiilison a lieu et mets la distance dans d \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mur_ac17cde341fa126c26a24128d094557a4}\label{class_mur_ac17cde341fa126c26a24128d094557a4}} 
+\mbox{\hyperlink{class_mur_ac17cde341fa126c26a24128d094557a4}{Mur}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&r)
+\begin{DoxyCompactList}\small\item\em prend un \mbox{\hyperlink{class_rectangle}{Rectangle}} un paramètre pour construire le \mbox{\hyperlink{class_mur}{Mur}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mur_a63a7560c521670716cd90c3599abcd71}{collision}} (\mbox{\hyperlink{class_cercle}{Cercle}} \&) const
+\begin{DoxyCompactList}\small\item\em detecte la collision d\textquotesingle{}un cercle en generale et prend l\textquotesingle{}action necessaire. l\textquotesingle{}action par default est d\textquotesingle{}arrêter le cercle car c\textquotesingle{}est un mur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mur}{Mur}} \mbox{\hyperlink{class_mur_aeb65d73f7f7176a5e77e220107a4902f}{genere\+Mur\+Alea}} (const Vec2 \&, unsigned int w, unsigned int h) const
+\begin{DoxyCompactList}\small\item\em retourne le lien vers l\textquotesingle{}image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Membres hérités additionnels}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_mur_a52a18f3a0baad70fb413f39e3d29c5a3}\label{class_mur_a52a18f3a0baad70fb413f39e3d29c5a3}} 
+\index{Mur@{Mur}!Mur@{Mur}}
+\index{Mur@{Mur}!Mur@{Mur}}
+\subsubsection{\texorpdfstring{Mur()}{Mur()}}
+{\footnotesize\ttfamily Mur\+::\+Mur (\begin{DoxyParamCaption}\item[{const Vec2 \&}]{\+\_\+pos\+Min = {\ttfamily Vec2(0,0)},  }\item[{unsigned int}]{w = {\ttfamily 1},  }\item[{unsigned int}]{h = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+retoune un entier pour dire dans quelle coté la coiilison a lieu et mets la distance dans d 
+
+0 pour cote gauche-\/haut 1 pour cote gauche ainsi de suite. donc on tourne dans le snse anti-\/horaire et il y a 8 cote constructeur prend une posotion la largeur et l\textquotesingle{}hauteur en paramètre et au final utilise le constructeur le \mbox{\hyperlink{class_rectangle}{Rectangle}} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_mur_a63a7560c521670716cd90c3599abcd71}\label{class_mur_a63a7560c521670716cd90c3599abcd71}} 
+\index{Mur@{Mur}!collision@{collision}}
+\index{collision@{collision}!Mur@{Mur}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily void Mur\+::collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cercle}{Cercle}} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+detecte la collision d\textquotesingle{}un cercle en generale et prend l\textquotesingle{}action necessaire. l\textquotesingle{}action par default est d\textquotesingle{}arrêter le cercle car c\textquotesingle{}est un mur. 
+
+\begin{DoxyRefDesc}{Bogue}
+\item[\mbox{\hyperlink{bug__bug000001}{Bogue}}]des fois la double collision ne marche pas. la plupart des cas c\textquotesingle{}est se voit quand la distance entre deux mur est plus grand que le rayon et inférieur 2$\ast$r.\end{DoxyRefDesc}
+\mbox{\Hypertarget{class_mur_aeb65d73f7f7176a5e77e220107a4902f}\label{class_mur_aeb65d73f7f7176a5e77e220107a4902f}} 
+\index{Mur@{Mur}!genere\+Mur\+Alea@{genere\+Mur\+Alea}}
+\index{genere\+Mur\+Alea@{genere\+Mur\+Alea}!Mur@{Mur}}
+\subsubsection{\texorpdfstring{genere\+Mur\+Alea()}{genereMurAlea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mur}{Mur}} Mur\+::genere\+Mur\+Alea (\begin{DoxyParamCaption}\item[{const Vec2 \&}]{pos,  }\item[{unsigned int}]{w,  }\item[{unsigned int}]{h }\end{DoxyParamCaption}) const}
+
+
+
+retourne le lien vers l\textquotesingle{}image 
+
+met à jour le lien de l\textquotesingle{}image genere un mur aléatoirement dans le ractangle passe en param 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/core/Mur.\+h\item 
+src/core/Mur.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{class_image}{}\section{Référence de la classe Image}
+\label{class_image}\index{Image@{Image}}
+
+
+la classe contoent le lien vers une image dans une chaine de tableau  
+
+
+
+
+{\ttfamily \#include $<$Image.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_a804cf781f8e8c78089e66441a3c1f650}\label{class_image_a804cf781f8e8c78089e66441a3c1f650}} 
+\mbox{\hyperlink{class_image_a804cf781f8e8c78089e66441a3c1f650}{Image}} (const std\+::string \&\+\_\+lien)
+\begin{DoxyCompactList}\small\item\em crée une image à partir une lien passé en paramètre par default le lien est vide donc pas acune image \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_image_ad3b1871165722f1324a45f0b33914e4e}\label{class_image_ad3b1871165722f1324a45f0b33914e4e}} 
+{\bfseries Image} (const char $\ast$\+\_\+lien)
+\item 
+\mbox{\Hypertarget{class_image_a58edd1c45b4faeb5f789b0d036d02313}\label{class_image_a58edd1c45b4faeb5f789b0d036d02313}} 
+\mbox{\hyperlink{class_image_a58edd1c45b4faeb5f789b0d036d02313}{Image}} ()
+\begin{DoxyCompactList}\small\item\em crée un image par default \char`\"{}data/img/default.\+png\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_image_a01e7f7086e157349f449e0f3f1843d86}\label{class_image_a01e7f7086e157349f449e0f3f1843d86}} 
+void \mbox{\hyperlink{class_image_a01e7f7086e157349f449e0f3f1843d86}{set\+\_\+lien}} (const std\+::string \&\+\_\+lien)
+\begin{DoxyCompactList}\small\item\em met à jour le lien vers l\textquotesingle{}image \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_image_a5501a0b6ba5e7e23706211deb443fb50}\label{class_image_a5501a0b6ba5e7e23706211deb443fb50}} 
+void {\bfseries set\+\_\+lien} (const char $\ast$\+\_\+lien)
+\item 
+bool \mbox{\hyperlink{class_image_a73850779b4e32fbe214f5c3fad620854}{valide}} () const
+\item 
+\mbox{\Hypertarget{class_image_aba8f03a51b8b00ca960f20b6815e558f}\label{class_image_aba8f03a51b8b00ca960f20b6815e558f}} 
+std\+::string \mbox{\hyperlink{class_image_aba8f03a51b8b00ca960f20b6815e558f}{get\+\_\+lien}} () const
+\begin{DoxyCompactList}\small\item\em retourne le lien \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_image_ae2379b7f0c93169809b3b0de1d3046fc}\label{class_image_ae2379b7f0c93169809b3b0de1d3046fc}} 
+void \mbox{\hyperlink{class_image_ae2379b7f0c93169809b3b0de1d3046fc}{print}} () const
+\begin{DoxyCompactList}\small\item\em affiche le de l\textquotesingle{}image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_adb76bf3a51635a995a5bb24b81013b71}\label{class_image_adb76bf3a51635a995a5bb24b81013b71}} 
+std\+::string {\bfseries lien}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+la classe contoent le lien vers une image dans une chaine de tableau 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_image_a73850779b4e32fbe214f5c3fad620854}\label{class_image_a73850779b4e32fbe214f5c3fad620854}} 
+\index{Image@{Image}!valide@{valide}}
+\index{valide@{valide}!Image@{Image}}
+\subsubsection{\texorpdfstring{valide()}{valide()}}
+{\footnotesize\ttfamily bool Image\+::valide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+verifie si l\textquotesingle{}image existe 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/base/Image.\+h\item 
+src/base/Image.\+cpp\end{DoxyCompactItemize}

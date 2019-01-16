@@ -1,0 +1,122 @@
+\hypertarget{class_joueur}{}\section{Référence de la classe Joueur}
+\label{class_joueur}\index{Joueur@{Joueur}}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_joueur_a9ee3f630c46d3612f87a72f75b3c7d76}\label{class_joueur_a9ee3f630c46d3612f87a72f75b3c7d76}} 
+{\bfseries Joueur} (const Vec2 \&pos, int r)
+\item 
+\mbox{\Hypertarget{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}\label{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}} 
+\mbox{\hyperlink{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}{$\sim$\+Joueur}} ()
+\begin{DoxyCompactList}\small\item\em par default \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_joueur_a51be65b4cbb2bb9532fcd3de64ad42c9}\label{class_joueur_a51be65b4cbb2bb9532fcd3de64ad42c9}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_joueur_a75e77168767d1130487144140a49ea70}\label{class_joueur_a75e77168767d1130487144140a49ea70}} 
+unsigned int {\bfseries get\+\_\+score} () const
+\item 
+\mbox{\Hypertarget{class_joueur_a47ff930f196fbf7d4a9b9aa5dd739674}\label{class_joueur_a47ff930f196fbf7d4a9b9aa5dd739674}} 
+void {\bfseries add\+\_\+score} (unsigned int)
+\item 
+\mbox{\Hypertarget{class_joueur_af7eb934fee4850dbee462915ec0c82a1}\label{class_joueur_af7eb934fee4850dbee462915ec0c82a1}} 
+std\+::vector$<$ \mbox{\hyperlink{class_cercle}{Cercle}} $>$ \& {\bfseries get\+Tab\+Cercle} ()
+\item 
+\mbox{\Hypertarget{class_joueur_acbf9b39bfd457782dcfc4de9c132409c}\label{class_joueur_acbf9b39bfd457782dcfc4de9c132409c}} 
+float {\bfseries getscore} ()
+\item 
+\mbox{\Hypertarget{class_joueur_a524e909f135fff3c619d9cb3f3681ae7}\label{class_joueur_a524e909f135fff3c619d9cb3f3681ae7}} 
+\mbox{\hyperlink{class_camera}{Camera}} \& {\bfseries get\+Cam} ()
+\item 
+\mbox{\Hypertarget{class_joueur_acda840df5fc63d8463c3040100197e30}\label{class_joueur_acda840df5fc63d8463c3040100197e30}} 
+std\+::string {\bfseries get\+Image} () const
+\item 
+\mbox{\Hypertarget{class_joueur_a2bd7f1da6201533e9e4fe4135e9c3097}\label{class_joueur_a2bd7f1da6201533e9e4fe4135e9c3097}} 
+void {\bfseries set\+Image} (const std\+::string \&s)
+\item 
+\mbox{\Hypertarget{class_joueur_a9e008b9bdf18b2196706da207b40bea2}\label{class_joueur_a9e008b9bdf18b2196706da207b40bea2}} 
+void {\bfseries deplacer\+Joueur} (const Vec2 \&direction)
+\item 
+\mbox{\Hypertarget{class_joueur_a30eba806864163e92d2f884f21d9ad35}\label{class_joueur_a30eba806864163e92d2f884f21d9ad35}} 
+void {\bfseries collision} (const \mbox{\hyperlink{class_terrain}{Terrain}} \&)
+\item 
+\mbox{\Hypertarget{class_joueur_a0169afba32e10d103d535e2fcc577736}\label{class_joueur_a0169afba32e10d103d535e2fcc577736}} 
+void {\bfseries collision} (const \mbox{\hyperlink{class_mur}{Mur}} \&)
+\item 
+\mbox{\Hypertarget{class_joueur_aa43300b65ed3d7254b0d1afabf5b8ce3}\label{class_joueur_aa43300b65ed3d7254b0d1afabf5b8ce3}} 
+bool \mbox{\hyperlink{class_joueur_aa43300b65ed3d7254b0d1afabf5b8ce3}{action\+Cercle}} (\mbox{\hyperlink{class_cercle}{Cercle}} \&)
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}action néccéssaire en de collision avec un cercle. ex\+: manger un cercle si c\textquotesingle{}est plus petit / rajoute des points au score \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_joueur_a00d886b1357bfb274384ec99ecc24fd3}\label{class_joueur_a00d886b1357bfb274384ec99ecc24fd3}} 
+void \mbox{\hyperlink{class_joueur_a00d886b1357bfb274384ec99ecc24fd3}{action\+Joueur}} (\mbox{\hyperlink{class_joueur}{Joueur}} \&)
+\begin{DoxyCompactList}\small\item\em fait l\textquotesingle{}action néccésaire pour le jeu en ligne \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_joueur_a9aecf01977c68758ec2853de174d17e2}\label{class_joueur_a9aecf01977c68758ec2853de174d17e2}} 
+void {\bfseries move\+Up} ()
+\item 
+\mbox{\Hypertarget{class_joueur_a5b8219a69012fcefeaa0662d4003ae5f}\label{class_joueur_a5b8219a69012fcefeaa0662d4003ae5f}} 
+void {\bfseries move\+Down} ()
+\item 
+\mbox{\Hypertarget{class_joueur_a804de1f48128371f5d8ee8c53efda5b7}\label{class_joueur_a804de1f48128371f5d8ee8c53efda5b7}} 
+void {\bfseries move\+Left} ()
+\item 
+\mbox{\Hypertarget{class_joueur_af5dc6b3ea32a0e5dec577ff8e872c6f1}\label{class_joueur_af5dc6b3ea32a0e5dec577ff8e872c6f1}} 
+void {\bfseries move\+Right} ()
+\item 
+\mbox{\Hypertarget{class_joueur_abd275928a3acfdcf3cbce0d91e6a1ed4}\label{class_joueur_abd275928a3acfdcf3cbce0d91e6a1ed4}} 
+void {\bfseries sauver} (int fd) const
+\item 
+\mbox{\Hypertarget{class_joueur_afc0aed026c23c7da4e109bc865769e4b}\label{class_joueur_afc0aed026c23c7da4e109bc865769e4b}} 
+void {\bfseries charger} (int fd)
+\item 
+\mbox{\Hypertarget{class_joueur_aa4e3150791b3a072a894e83ad423aa59}\label{class_joueur_aa4e3150791b3a072a894e83ad423aa59}} 
+void \mbox{\hyperlink{class_joueur_aa4e3150791b3a072a894e83ad423aa59}{diviser}} ()
+\begin{DoxyCompactList}\small\item\em divise tous les cercles en deux si le rayon $>$ 50 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_joueur_ae1ac0277d6bc778a594290ac8ddbda2e}\label{class_joueur_ae1ac0277d6bc778a594290ac8ddbda2e}} 
+void \mbox{\hyperlink{class_joueur_ae1ac0277d6bc778a594290ac8ddbda2e}{fussionner}} ()
+\begin{DoxyCompactList}\small\item\em fussionne les cercles deux par deux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_ab37bf9dea93f89ed59a8103aa9a4ec00}{collision\+\_\+entre\+\_\+cercles}} ()
+\begin{DoxyCompactList}\small\item\em gére les collision entre ses propre cercle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_joueur_a00f152a998b74e4af04a0637fd8523e7}\label{class_joueur_a00f152a998b74e4af04a0637fd8523e7}} 
+bool \mbox{\hyperlink{class_joueur_a00f152a998b74e4af04a0637fd8523e7}{all\+\_\+zero}} (int \&n)
+\begin{DoxyCompactList}\small\item\em retourne vraie si tous les cerles du joueur ont r = 0 ou il n\textquotesingle{}y a aucun cercle et dans int n met le quelle est différent de 0 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_joueur_a8a9d40530e242a8b7b039d93005dba63}\label{class_joueur_a8a9d40530e242a8b7b039d93005dba63}} 
+void \mbox{\hyperlink{class_joueur_a8a9d40530e242a8b7b039d93005dba63}{update\+\_\+cam}} ()
+\begin{DoxyCompactList}\small\item\em met à jours la camera de joueur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_joueur_a02b2f6b94369cc76a1dabe2aa2e03859}\label{class_joueur_a02b2f6b94369cc76a1dabe2aa2e03859}} 
+std\+::vector$<$ \mbox{\hyperlink{class_cercle}{Cercle}} $>$ {\bfseries cercles}
+\item 
+\mbox{\Hypertarget{class_joueur_a4644f792cd654951b6f0b39132deb138}\label{class_joueur_a4644f792cd654951b6f0b39132deb138}} 
+\mbox{\hyperlink{class_camera}{Camera}} {\bfseries cam}
+\item 
+\mbox{\Hypertarget{class_joueur_aad7f2cb36e267b5493c42e04e63f7364}\label{class_joueur_aad7f2cb36e267b5493c42e04e63f7364}} 
+\mbox{\hyperlink{class_rectangle}{Rectangle}} {\bfseries mini\+Terrain}
+\item 
+\mbox{\Hypertarget{class_joueur_acaf76cda88d77ec17a00c36bd4783c45}\label{class_joueur_acaf76cda88d77ec17a00c36bd4783c45}} 
+unsigned int {\bfseries score}
+\item 
+\mbox{\Hypertarget{class_joueur_ad7e0c8c70d60d8094006a37fa13d32aa}\label{class_joueur_ad7e0c8c70d60d8094006a37fa13d32aa}} 
+\mbox{\hyperlink{class_image}{Image}} {\bfseries im}
+\item 
+\mbox{\Hypertarget{class_joueur_ac1d96120c39a07fd4b8c15a8423aaf11}\label{class_joueur_ac1d96120c39a07fd4b8c15a8423aaf11}} 
+Vec2 {\bfseries tmp\+\_\+cam}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_joueur_ab37bf9dea93f89ed59a8103aa9a4ec00}\label{class_joueur_ab37bf9dea93f89ed59a8103aa9a4ec00}} 
+\index{Joueur@{Joueur}!collision\+\_\+entre\+\_\+cercles@{collision\+\_\+entre\+\_\+cercles}}
+\index{collision\+\_\+entre\+\_\+cercles@{collision\+\_\+entre\+\_\+cercles}!Joueur@{Joueur}}
+\subsubsection{\texorpdfstring{collision\+\_\+entre\+\_\+cercles()}{collision\_entre\_cercles()}}
+{\footnotesize\ttfamily void Joueur\+::collision\+\_\+entre\+\_\+cercles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gére les collision entre ses propre cercle 
+
+le calcule non optimisé Vec2 tmp = cercles\mbox{[}i\mbox{]}.get\+Pos() -\/ cercles\mbox{[}j\mbox{]}.get\+Pos(); tmp = tmp.\+normalise(); tmp = cercles\mbox{[}j\mbox{]}.get\+Pos() + tmp $\ast$ 2$\ast$cercles\mbox{[}i\mbox{]}.r; cercles\mbox{[}i\mbox{]}.set\+Pos\+Vec2(tmp) 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/core/Joueur.\+h\item 
+src/core/Joueur.\+cpp\end{DoxyCompactItemize}

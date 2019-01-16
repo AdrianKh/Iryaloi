@@ -1,0 +1,98 @@
+#pragma once
+
+#include "Couleur.h"
+#include "Vec2.h"
+#include "Cercle.h"
+
+class Triangle
+{
+
+    protected:
+    Vec2 cote1;
+    Vec2 cote2;
+    Vec2 cote3;
+    float vitesse;
+    Couleur couleur;
+    float aire;
+
+    public:
+    /**
+     * @brief modifie la vitesse 
+    */
+    void setVitesse(const float & vitesse);
+    /**
+     * @brief modifie l'aire 
+    */
+    void setAire(const float & aire);
+    /**
+     * @brief renvoi ma vitesse du triangle
+    */
+    float getVitess() const;
+    /**
+     * @brief renvoie la couleur du triangle
+    */
+    Couleur getCouleur() const;
+    /**
+     * @brief envoie l'aire du triangle
+    */
+    float getAire()const;
+    /**
+     * @brief renvoi le vecteur cordoné du coté 1 du triangle
+    */
+    Vec2 getCote1() const;
+    /**
+     * @brief renvoi le vecteur cordoné du coté 2 du triangle
+    */
+    Vec2 getCote2() const;
+    /**
+     * @brief renvoi le vecteur cordoné du coté 3 du triangle
+    */
+    Vec2 getCote3() const;
+
+    /**
+     * @brief modifier les cordonés du cote 1 du triangle 
+    */
+    void setCote1(const Vec2 & _cote1);
+    /**
+     * @brief modifier les cordonés du cote 2 du triangle 
+    */
+    void setCote2(const Vec2 & _cote2);
+    /**
+     * @brief modifier les cordonés du cote 3 du triangle 
+    */
+    void setCote3(const Vec2 & _cote3);
+    /**
+     * @brief constructeur initialisateur du triangle 
+    */
+    Triangle();
+
+    /**
+     * @brief initialise toute les valeurs de triangle 
+    */
+    void initTriangle();
+
+
+    /**
+     * @brienf reduit l'air du triangle à 0
+    */
+    float supprimeAire(const float & air);
+    /**
+     * @brief ....?
+    */
+    void suitCercle(const Cercle  cercle );
+
+    /**
+     *@brief ....?
+    */
+    void bougerTriangle(const Vec2 direction);
+    /**
+     * @brief ...?
+    */
+    void bougerTriangleAutomatique();
+    /**
+     * @brief ...........
+    */
+    void attaqueCercle(Cercle &cercle);
+
+
+};

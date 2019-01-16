@@ -1,0 +1,215 @@
+\hypertarget{class_fenetre_s_f_m_l}{}\section{Référence de la classe Fenetre\+S\+F\+ML}
+\label{class_fenetre_s_f_m_l}\index{Fenetre\+S\+F\+ML@{Fenetre\+S\+F\+ML}}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a8b5a5cd1fd63188803cddc7e038a47bf}\label{class_fenetre_s_f_m_l_a8b5a5cd1fd63188803cddc7e038a47bf}} 
+{\bfseries Fenetre\+S\+F\+ML} (const std\+::string \&name, const unsigned int w, const unsigned int h)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a878c1c121f8c2397e74ab91f76e65798}\label{class_fenetre_s_f_m_l_a878c1c121f8c2397e74ab91f76e65798}} 
+sf\+::\+Render\+Window \& {\bfseries get\+Win} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a2b7a011157a5ed20be831b8d6dcdb827}\label{class_fenetre_s_f_m_l_a2b7a011157a5ed20be831b8d6dcdb827}} 
+void {\bfseries init} (const std\+::string \&name, const unsigned int w, const unsigned int h)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a4d63d531ea7b3bec984c9d1d61867d26}\label{class_fenetre_s_f_m_l_a4d63d531ea7b3bec984c9d1d61867d26}} 
+bool {\bfseries is\+Open} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a72f58aaf9ed9fd5a864594974bb135c4}\label{class_fenetre_s_f_m_l_a72f58aaf9ed9fd5a864594974bb135c4}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_a72f58aaf9ed9fd5a864594974bb135c4}{gerer\+Evenement}} ()
+\begin{DoxyCompactList}\small\item\em genere des evenements en générale comme les touches resize la position de la souris et la camera. attetion cette fonction nécéssite un objet \mbox{\hyperlink{class_camera}{Camera}} c\textquotesingle{}est à dire il faut set\+View(cam $\ast$) avant de l\textquotesingle{}uiliser \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ae2e35f684a7ae5d78aa47f5e9dfc1729}\label{class_fenetre_s_f_m_l_ae2e35f684a7ae5d78aa47f5e9dfc1729}} 
+void {\bfseries display} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a28b88839d55d5144fc4caf9aa4c7170b}\label{class_fenetre_s_f_m_l_a28b88839d55d5144fc4caf9aa4c7170b}} 
+void {\bfseries get\+Mouse\+Pos} (int \&x, int \&y) const
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a8f5bb5db29d8432e6b5d08dbb1ba1ebc}\label{class_fenetre_s_f_m_l_a8f5bb5db29d8432e6b5d08dbb1ba1ebc}} 
+Vec2 {\bfseries get\+Mouse\+Pos} () const
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a2ea4791230c4b6ff848fef97a8c5531b}\label{class_fenetre_s_f_m_l_a2ea4791230c4b6ff848fef97a8c5531b}} 
+void {\bfseries clear} (sf\+::\+Color c=sf\+::\+Color\+::\+White)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_acd2e5270730f11d9f6fccaabb88d66ac}\label{class_fenetre_s_f_m_l_acd2e5270730f11d9f6fccaabb88d66ac}} 
+void {\bfseries fps} (unsigned char fps)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_af67ca0aba55df065f1e26cbdbfa63624}\label{class_fenetre_s_f_m_l_af67ca0aba55df065f1e26cbdbfa63624}} 
+void {\bfseries set\+View} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_afcc1ba8618bbcfa63a4cff97c6b7e69b}\label{class_fenetre_s_f_m_l_afcc1ba8618bbcfa63a4cff97c6b7e69b}} 
+void {\bfseries update\+View} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_add47331de0ad53e7aa7aaced2db17371}\label{class_fenetre_s_f_m_l_add47331de0ad53e7aa7aaced2db17371}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_cercle}{Cercle}} \&c)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a5f28f2ad1c3a6d961ade733c84796a26}\label{class_fenetre_s_f_m_l_a5f28f2ad1c3a6d961ade733c84796a26}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&r)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a4b913201ba60c39712a6faa502c0854d}\label{class_fenetre_s_f_m_l_a4b913201ba60c39712a6faa502c0854d}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_terrain}{Terrain}} \&t)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a680873025ada27af68ae50d4ac11aafc}\label{class_fenetre_s_f_m_l_a680873025ada27af68ae50d4ac11aafc}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_camera}{Camera}} \&)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_af24226d9765a0ef2ddbd25028f632774}\label{class_fenetre_s_f_m_l_af24226d9765a0ef2ddbd25028f632774}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_mur}{Mur}} \&m)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_aae5c28d20b77100f15d109f452d3c89c}\label{class_fenetre_s_f_m_l_aae5c28d20b77100f15d109f452d3c89c}} 
+void {\bfseries draw} (\mbox{\hyperlink{class_joueur}{Joueur}} \&j, bool j\+\_\+actuelle=true)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a40d24e340cf80f10bcc902b9fe798f22}\label{class_fenetre_s_f_m_l_a40d24e340cf80f10bcc902b9fe798f22}} 
+void {\bfseries draw} (\mbox{\hyperlink{class_jeu}{Jeu}} \&j)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ac79803b008b1993560167b66e284d7a4}\label{class_fenetre_s_f_m_l_ac79803b008b1993560167b66e284d7a4}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_case}{Case}} \&)
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a0072469e0db5dbbbb85ec237e0657304}\label{class_fenetre_s_f_m_l_a0072469e0db5dbbbb85ec237e0657304}} 
+void {\bfseries draw} (\mbox{\hyperlink{class_menu}{Menu}} \&)
+\item 
+bool \mbox{\hyperlink{class_fenetre_s_f_m_l_ac7c527412448d905ff45f7966b234196}{is\+Key\+Pressed}} (char key)
+\begin{DoxyCompactList}\small\item\em verifie si la touche a été appouyé.\+attention la fonction marche que pour les touches Z S Q D et prend un cher en parametre. ex\+: Z = UP S = D\+O\+WN Q = L\+E\+FT D = R\+I\+G\+HT \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a8b877cce4a0ee5aa65bf88fbfbb82697}\label{class_fenetre_s_f_m_l_a8b877cce4a0ee5aa65bf88fbfbb82697}} 
+bool \mbox{\hyperlink{class_fenetre_s_f_m_l_a8b877cce4a0ee5aa65bf88fbfbb82697}{is\+Key\+Pressed}} (std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em verifie si la touche a été appuyé. ex\+: \char`\"{}\+U\+P\char`\"{} = UP \char`\"{}\+D\+O\+W\+N\char`\"{} = D\+O\+WN \char`\"{}\+L\+E\+F\+T\char`\"{} = L\+E\+FT \char`\"{}\+R\+I\+G\+H\+T\char`\"{} = R\+I\+G\+HT \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a1c31f398710e536d43b095aa4f723f3e}\label{class_fenetre_s_f_m_l_a1c31f398710e536d43b095aa4f723f3e}} 
+bool \mbox{\hyperlink{class_fenetre_s_f_m_l_a1c31f398710e536d43b095aa4f723f3e}{space\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em retourne vrai si l\textquotesingle{}espace est appuyer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a6436b743eccfb9a7f2300fa9cd3fccad}\label{class_fenetre_s_f_m_l_a6436b743eccfb9a7f2300fa9cd3fccad}} 
+bool \mbox{\hyperlink{class_fenetre_s_f_m_l_a6436b743eccfb9a7f2300fa9cd3fccad}{mouse\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em dit si la touche gauche de la souris a été appuyé \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a10190311b69d6f2cd07fbd7564f887b3}\label{class_fenetre_s_f_m_l_a10190311b69d6f2cd07fbd7564f887b3}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_a10190311b69d6f2cd07fbd7564f887b3}{set\+\_\+bg\+\_\+music}} (const std\+::string \&chemin)
+\begin{DoxyCompactList}\small\item\em set the bg music from a pathname this will play repitatedly \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ad740f79245c4f70899278d7d56dca516}\label{class_fenetre_s_f_m_l_ad740f79245c4f70899278d7d56dca516}} 
+bool \mbox{\hyperlink{class_fenetre_s_f_m_l_ad740f79245c4f70899278d7d56dca516}{bg\+\_\+is\+\_\+finished}} ()
+\begin{DoxyCompactList}\small\item\em renvoie si la music couratn est finit \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_acc698eeb5f93898c43208f7cd3a46d3a}\label{class_fenetre_s_f_m_l_acc698eeb5f93898c43208f7cd3a46d3a}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_acc698eeb5f93898c43208f7cd3a46d3a}{stop\+\_\+bg\+\_\+music}} ()
+\begin{DoxyCompactList}\small\item\em comme son nom arrete la musique du fond \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_aa1f1a47cc25c814bbb1c42c01e350a6d}\label{class_fenetre_s_f_m_l_aa1f1a47cc25c814bbb1c42c01e350a6d}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_aa1f1a47cc25c814bbb1c42c01e350a6d}{volume\+\_\+up}} ()
+\begin{DoxyCompactList}\small\item\em augmente le volume de musique du fond \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a67a7e637a9a817e148dcd864a570a6a9}\label{class_fenetre_s_f_m_l_a67a7e637a9a817e148dcd864a570a6a9}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_a67a7e637a9a817e148dcd864a570a6a9}{volume\+\_\+down}} ()
+\begin{DoxyCompactList}\small\item\em diminue le volume de music de fond \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a7c3cea5c2aa43f08a1684d16f0ef96a1}\label{class_fenetre_s_f_m_l_a7c3cea5c2aa43f08a1684d16f0ef96a1}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_a7c3cea5c2aa43f08a1684d16f0ef96a1}{bg\+\_\+auto}} ()
+\begin{DoxyCompactList}\small\item\em commence à jouer à partir de 1.\+ogg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a7ea91ef33ef2267d00ea06a6d2fb41f2}\label{class_fenetre_s_f_m_l_a7ea91ef33ef2267d00ea06a6d2fb41f2}} 
+void \mbox{\hyperlink{class_fenetre_s_f_m_l_a7ea91ef33ef2267d00ea06a6d2fb41f2}{play\+\_\+next}} ()
+\begin{DoxyCompactList}\small\item\em jeu la musique suivant selon next\+\_\+bg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ab6df4095c365f23fc9c022c58519bf4f}\label{class_fenetre_s_f_m_l_ab6df4095c365f23fc9c022c58519bf4f}} 
+bool \mbox{\hyperlink{class_fenetre_s_f_m_l_ab6df4095c365f23fc9c022c58519bf4f}{pressed\+\_\+f}} ()
+\begin{DoxyCompactList}\small\item\em retourne si f a été appuyé \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_aab129bf54861fb3255d3cc0138aba636}\label{class_fenetre_s_f_m_l_aab129bf54861fb3255d3cc0138aba636}} 
+void {\bfseries init\+Shapes} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_afbc4ccdc13fc985ce6e5fd575dc1f632}\label{class_fenetre_s_f_m_l_afbc4ccdc13fc985ce6e5fd575dc1f632}} 
+void {\bfseries init\+\_\+max\+\_\+track} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_af46bfd167e1802264e06d6f38e1f02d6}\label{class_fenetre_s_f_m_l_af46bfd167e1802264e06d6f38e1f02d6}} 
+sf\+::\+Render\+Window {\bfseries win}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ac05bd0de093d662b3d24906033ea6090}\label{class_fenetre_s_f_m_l_ac05bd0de093d662b3d24906033ea6090}} 
+sf\+::\+Context\+Settings {\bfseries settings}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_aa7da66f1e11b11e4441b7d82d0f91e99}\label{class_fenetre_s_f_m_l_aa7da66f1e11b11e4441b7d82d0f91e99}} 
+unsigned int {\bfseries \+\_\+w}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a654ece9b5e3f8013ec56d82313022189}\label{class_fenetre_s_f_m_l_a654ece9b5e3f8013ec56d82313022189}} 
+unsigned int {\bfseries \+\_\+h}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a809ad16db0daf0e8341b16a456645451}\label{class_fenetre_s_f_m_l_a809ad16db0daf0e8341b16a456645451}} 
+Vec2 {\bfseries mouse\+Pos}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a054c59cbef189e68fb891f03690e67cc}\label{class_fenetre_s_f_m_l_a054c59cbef189e68fb891f03690e67cc}} 
+\mbox{\hyperlink{class_camera}{Camera}} $\ast$ {\bfseries cam}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_acd2e87021a3ad2a307a79079c209ea29}\label{class_fenetre_s_f_m_l_acd2e87021a3ad2a307a79079c209ea29}} 
+bool {\bfseries open}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a795d301875fd8bb822f5fb558c8a0039}\label{class_fenetre_s_f_m_l_a795d301875fd8bb822f5fb558c8a0039}} 
+sf\+::\+Event {\bfseries evt}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ad8f500d587505a7ceb8df2dc746179e5}\label{class_fenetre_s_f_m_l_ad8f500d587505a7ceb8df2dc746179e5}} 
+sf\+::\+View {\bfseries viewport}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_aae05b81e784598019f9e33cac16d03b0}\label{class_fenetre_s_f_m_l_aae05b81e784598019f9e33cac16d03b0}} 
+bool {\bfseries space}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a3285afb9f7ae62127e36f97d528ab956}\label{class_fenetre_s_f_m_l_a3285afb9f7ae62127e36f97d528ab956}} 
+bool {\bfseries mouse}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ad3ce4c0541046b299d7977dc7364fdd4}\label{class_fenetre_s_f_m_l_ad3ce4c0541046b299d7977dc7364fdd4}} 
+bool {\bfseries key\+\_\+f}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a87d629330aaa21f93e34ed5c2a6581d2}\label{class_fenetre_s_f_m_l_a87d629330aaa21f93e34ed5c2a6581d2}} 
+sf\+::\+Circle\+Shape {\bfseries cercle}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a9bad7a7af331b2f27d88b6267a627f3d}\label{class_fenetre_s_f_m_l_a9bad7a7af331b2f27d88b6267a627f3d}} 
+sf\+::\+Rectangle\+Shape {\bfseries rectangle}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ae768a769c8e744bde6d0e8fa7c0774ba}\label{class_fenetre_s_f_m_l_ae768a769c8e744bde6d0e8fa7c0774ba}} 
+sf\+::\+Texture {\bfseries text\+Rec}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a36a1d9f6e25d1e4b4c8c3c33322a1934}\label{class_fenetre_s_f_m_l_a36a1d9f6e25d1e4b4c8c3c33322a1934}} 
+sf\+::\+Texture $\ast$ {\bfseries tex\+Joueur}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a18563586a5703480bd55177d093d1a9f}\label{class_fenetre_s_f_m_l_a18563586a5703480bd55177d093d1a9f}} 
+sf\+::\+Texture $\ast$ {\bfseries tex\+Murs}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_abc2e00c5bc75a273635a76961be9d460}\label{class_fenetre_s_f_m_l_abc2e00c5bc75a273635a76961be9d460}} 
+sf\+::\+Texture $\ast$ {\bfseries tex\+Terrain}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a5be66c42a46033085abac35d1181829b}\label{class_fenetre_s_f_m_l_a5be66c42a46033085abac35d1181829b}} 
+sf\+::\+Texture $\ast$ {\bfseries tex\+Pt\+Cercle}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a35029fe40ac57be0f512bfc6c9149d27}\label{class_fenetre_s_f_m_l_a35029fe40ac57be0f512bfc6c9149d27}} 
+sf\+::\+Texture $\ast$ {\bfseries tex\+Menu}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a3ca35f664d34b43ffac96589f6efd87f}\label{class_fenetre_s_f_m_l_a3ca35f664d34b43ffac96589f6efd87f}} 
+sf\+::\+Text {\bfseries text}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a81dd85bcf9bcfe94f333a163dc556fdd}\label{class_fenetre_s_f_m_l_a81dd85bcf9bcfe94f333a163dc556fdd}} 
+sf\+::\+Font {\bfseries font}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a1fe49044a81cab7c21be95f2720ae2f8}\label{class_fenetre_s_f_m_l_a1fe49044a81cab7c21be95f2720ae2f8}} 
+sf\+::\+Texture {\bfseries text\+Cer}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_afbb394b8579c5cbaa5c08b3faaf186b2}\label{class_fenetre_s_f_m_l_afbb394b8579c5cbaa5c08b3faaf186b2}} 
+sf\+::\+Music {\bfseries bg\+\_\+music}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a0603f9acefe20e98d8a75b852b610512}\label{class_fenetre_s_f_m_l_a0603f9acefe20e98d8a75b852b610512}} 
+int {\bfseries bg\+\_\+num}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_a4575c8bbf39a2a25e593e227bdffec0f}\label{class_fenetre_s_f_m_l_a4575c8bbf39a2a25e593e227bdffec0f}} 
+int {\bfseries next\+\_\+bg}
+\item 
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ac66ddc51a61c1fa715b58cd8e594faff}\label{class_fenetre_s_f_m_l_ac66ddc51a61c1fa715b58cd8e594faff}} 
+int {\bfseries max\+\_\+audio\+\_\+tracks}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_fenetre_s_f_m_l_ac7c527412448d905ff45f7966b234196}\label{class_fenetre_s_f_m_l_ac7c527412448d905ff45f7966b234196}} 
+\index{Fenetre\+S\+F\+ML@{Fenetre\+S\+F\+ML}!is\+Key\+Pressed@{is\+Key\+Pressed}}
+\index{is\+Key\+Pressed@{is\+Key\+Pressed}!Fenetre\+S\+F\+ML@{Fenetre\+S\+F\+ML}}
+\subsubsection{\texorpdfstring{is\+Key\+Pressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Fenetre\+S\+F\+M\+L\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})}
+
+
+
+verifie si la touche a été appouyé.\+attention la fonction marche que pour les touches Z S Q D et prend un cher en parametre. ex\+: Z = UP S = D\+O\+WN Q = L\+E\+FT D = R\+I\+G\+HT 
+
+ex\+: Z = UP S = D\+O\+WN Q = L\+E\+FT D = R\+I\+G\+HT 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/sfml/Fenetre\+S\+F\+M\+L.\+h\item 
+src/sfml/Fenetre\+S\+F\+M\+L.\+cpp\end{DoxyCompactItemize}

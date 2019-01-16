@@ -1,0 +1,136 @@
+\hypertarget{class_jeu}{}\section{Référence de la classe Jeu}
+\label{class_jeu}\index{Jeu@{Jeu}}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jeu_a5535a6630eb92c048a10ef791e71cf5a}\label{class_jeu_a5535a6630eb92c048a10ef791e71cf5a}} 
+void \mbox{\hyperlink{class_jeu_a5535a6630eb92c048a10ef791e71cf5a}{init\+\_\+fd\+\_\+niveau}} (int n\+\_\+niveau, char mode)
+\begin{DoxyCompactList}\small\item\em ouvre un ficher dans le fd\+\_\+file les mode sont \textquotesingle{}r\textquotesingle{} read , \textquotesingle{}w\textquotesingle{} write vide le fd \textquotesingle{}a\textquotesingle{} append \textquotesingle{}b\textquotesingle{} rw et \textquotesingle{}c\textquotesingle{} creat \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jeu_a788037897f6abc1faec97f000e9695a9}\label{class_jeu_a788037897f6abc1faec97f000e9695a9}} 
+void \mbox{\hyperlink{class_jeu_a788037897f6abc1faec97f000e9695a9}{init}} (const etat e, unsigned int niveau=1)
+\begin{DoxyCompactList}\small\item\em initialise le jeu selon l\textquotesingle{}etat \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jeu_a6b6b7d4683d04ebab6dd03e82b41a1c3}\label{class_jeu_a6b6b7d4683d04ebab6dd03e82b41a1c3}} 
+void \mbox{\hyperlink{class_jeu_a6b6b7d4683d04ebab6dd03e82b41a1c3}{update}} ()
+\begin{DoxyCompactList}\small\item\em mets à jours le jeu selon l\textquotesingle{}etat \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_terrain}{Terrain}} \& \mbox{\hyperlink{class_jeu_a4b5b107671761a6bb963475bf4ecc8dd}{get\+Terrain}} ()
+\item 
+\mbox{\Hypertarget{class_jeu_adce66fc950c7f86430d4feb20002b3e1}\label{class_jeu_adce66fc950c7f86430d4feb20002b3e1}} 
+\mbox{\hyperlink{class_joueur}{Joueur}} \& {\bfseries get\+Joueur} ()
+\item 
+\mbox{\Hypertarget{class_jeu_aee1a811aa9dfc6e5dc8535e7d3c276ba}\label{class_jeu_aee1a811aa9dfc6e5dc8535e7d3c276ba}} 
+\mbox{\hyperlink{class_joueur}{Joueur}} \& {\bfseries get\+Joueur2} ()
+\item 
+\mbox{\Hypertarget{class_jeu_ad8f08faad5346cc9b6667432df49bb54}\label{class_jeu_ad8f08faad5346cc9b6667432df49bb54}} 
+\mbox{\hyperlink{class_camera}{Camera}} \& {\bfseries get\+Cam} ()
+\item 
+\mbox{\Hypertarget{class_jeu_afe9e8b7f988d23eeaca9ef54823e2535}\label{class_jeu_afe9e8b7f988d23eeaca9ef54823e2535}} 
+std\+::vector$<$ \mbox{\hyperlink{class_cercle}{Cercle}} $>$ \& {\bfseries get\+\_\+point\+\_\+arrive} ()
+\item 
+\mbox{\Hypertarget{class_jeu_ac8090c73233d155239fa18701447ab88}\label{class_jeu_ac8090c73233d155239fa18701447ab88}} 
+std\+::vector$<$ \mbox{\hyperlink{class_cercle}{Cercle}} $>$ \& {\bfseries get\+Ptit\+Cercles} ()
+\item 
+\mbox{\Hypertarget{class_jeu_aa6c6c3e14b56f212381aa48955c006e1}\label{class_jeu_aa6c6c3e14b56f212381aa48955c006e1}} 
+std\+::vector$<$ \mbox{\hyperlink{class_mur}{Mur}} $>$ \& {\bfseries get\+Murs} ()
+\item 
+\mbox{\Hypertarget{class_jeu_a580054f7d393f990cd7a423849f049e1}\label{class_jeu_a580054f7d393f990cd7a423849f049e1}} 
+std\+::string {\bfseries get\+Image\+Mur} () const
+\item 
+\mbox{\Hypertarget{class_jeu_aa5fea3241653279273019e0546252ca1}\label{class_jeu_aa5fea3241653279273019e0546252ca1}} 
+void {\bfseries set\+Image\+Mur} (const std\+::string \&)
+\item 
+\mbox{\Hypertarget{class_jeu_a2d7a95e03f82279231a55b4b628b94c9}\label{class_jeu_a2d7a95e03f82279231a55b4b628b94c9}} 
+std\+::string {\bfseries get\+Image\+Terrain} () const
+\item 
+\mbox{\Hypertarget{class_jeu_a6e15898fd91fd822f6d645129f507377}\label{class_jeu_a6e15898fd91fd822f6d645129f507377}} 
+void {\bfseries set\+Image\+Terrain} (const std\+::string \&)
+\item 
+\mbox{\Hypertarget{class_jeu_af3e0cea8fe88a18b84350cbda0a99706}\label{class_jeu_af3e0cea8fe88a18b84350cbda0a99706}} 
+std\+::string {\bfseries get\+Img\+Pt\+Cercle} () const
+\item 
+\mbox{\Hypertarget{class_jeu_a430b9c16c774aeee8a1b62078c129802}\label{class_jeu_a430b9c16c774aeee8a1b62078c129802}} 
+void {\bfseries set\+Img\+Pt\+Cercle} (const std\+::string \&)
+\item 
+\mbox{\Hypertarget{class_jeu_ac9bdb00e9ee579e545cc2dac53baae32}\label{class_jeu_ac9bdb00e9ee579e545cc2dac53baae32}} 
+etat {\bfseries get\+Etat\+De\+Jeu} () const
+\item 
+\mbox{\Hypertarget{class_jeu_a54aba3b532871e2289771a3dd8eb724d}\label{class_jeu_a54aba3b532871e2289771a3dd8eb724d}} 
+void {\bfseries change\+\_\+etat} (const etat e)
+\item 
+\mbox{\Hypertarget{class_jeu_a9def994dba2ad4cb6f7624f094d1a505}\label{class_jeu_a9def994dba2ad4cb6f7624f094d1a505}} 
+void \mbox{\hyperlink{class_jeu_a9def994dba2ad4cb6f7624f094d1a505}{sauver}} (int fd, bool init=false) const
+\begin{DoxyCompactList}\small\item\em sauvgarde le jeu dans un descripteur de fiche \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jeu_a924b69b4796f7b91364655c2e43c480b}\label{class_jeu_a924b69b4796f7b91364655c2e43c480b}} 
+void \mbox{\hyperlink{class_jeu_a924b69b4796f7b91364655c2e43c480b}{charger}} (int fd, bool init=false)
+\begin{DoxyCompactList}\small\item\em chergele le jeu à partir d\textquotesingle{}un fd \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jeu_aa5d49db4201091d7a31c6400b43db24e}\label{class_jeu_aa5d49db4201091d7a31c6400b43db24e}} 
+void {\bfseries last\+\_\+niveau} ()
+\item 
+\mbox{\Hypertarget{class_jeu_af8832b6cdb31f97f5dec8ed4e38a5200}\label{class_jeu_af8832b6cdb31f97f5dec8ed4e38a5200}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_jeu_a8a1df4e7132f36eaae7fe60807a08a90}\label{class_jeu_a8a1df4e7132f36eaae7fe60807a08a90}} 
+void {\bfseries init\+\_\+imgs} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jeu_a906acfd427c1a7493ed56ee385c4c96d}\label{class_jeu_a906acfd427c1a7493ed56ee385c4c96d}} 
+\mbox{\hyperlink{class_terrain}{Terrain}} {\bfseries t}
+\item 
+\mbox{\Hypertarget{class_jeu_a9699ce0488a9a79d352a9d41944c0cf0}\label{class_jeu_a9699ce0488a9a79d352a9d41944c0cf0}} 
+\mbox{\hyperlink{class_joueur}{Joueur}} {\bfseries j}
+\item 
+\mbox{\Hypertarget{class_jeu_ac89385af0cda0c4ee69f35711cbb27ef}\label{class_jeu_ac89385af0cda0c4ee69f35711cbb27ef}} 
+\mbox{\hyperlink{class_joueur}{Joueur}} {\bfseries j2}
+\item 
+\mbox{\Hypertarget{class_jeu_a232a6e57d98354a292a1a48638b56d62}\label{class_jeu_a232a6e57d98354a292a1a48638b56d62}} 
+etat {\bfseries etat\+De\+Jeu}
+\item 
+\mbox{\Hypertarget{class_jeu_afedfece7a340c1d8a932fa5681ef0690}\label{class_jeu_afedfece7a340c1d8a932fa5681ef0690}} 
+std\+::vector$<$ \mbox{\hyperlink{class_cercle}{Cercle}} $>$ {\bfseries petit\+Cercles}
+\item 
+\mbox{\Hypertarget{class_jeu_a16a1607eaddefe244ee7b488ba85553e}\label{class_jeu_a16a1607eaddefe244ee7b488ba85553e}} 
+std\+::vector$<$ \mbox{\hyperlink{class_mur}{Mur}} $>$ {\bfseries murs}
+\item 
+\mbox{\Hypertarget{class_jeu_a056e9a0a76a2c2ad4c0e4eee4a1aba6e}\label{class_jeu_a056e9a0a76a2c2ad4c0e4eee4a1aba6e}} 
+\mbox{\hyperlink{class_image}{Image}} {\bfseries img\+Murs}
+\item 
+\mbox{\Hypertarget{class_jeu_a5aa88417a6ac07fbdce37a7177931dcc}\label{class_jeu_a5aa88417a6ac07fbdce37a7177931dcc}} 
+\mbox{\hyperlink{class_image}{Image}} {\bfseries img\+Terrain}
+\item 
+\mbox{\Hypertarget{class_jeu_a628cbea928144cda417838f36c0f68c6}\label{class_jeu_a628cbea928144cda417838f36c0f68c6}} 
+\mbox{\hyperlink{class_image}{Image}} {\bfseries img\+Pt\+Cercle}
+\item 
+\mbox{\Hypertarget{class_jeu_a468837ca209663bf2e9ef9c87e403064}\label{class_jeu_a468837ca209663bf2e9ef9c87e403064}} 
+\mbox{\hyperlink{class_reseau}{Reseau}} {\bfseries r}
+\item 
+\mbox{\Hypertarget{class_jeu_a8b6f2510eb9a2e6e257a76d2b71f12b9}\label{class_jeu_a8b6f2510eb9a2e6e257a76d2b71f12b9}} 
+int {\bfseries fd\+\_\+file}
+\item 
+\mbox{\Hypertarget{class_jeu_a49b468e50eac58873b84f547a1b7c1db}\label{class_jeu_a49b468e50eac58873b84f547a1b7c1db}} 
+int {\bfseries v\+\_\+niveau}
+\item 
+\mbox{\Hypertarget{class_jeu_a2d848be82aaa0ee159e005b31012cc4e}\label{class_jeu_a2d848be82aaa0ee159e005b31012cc4e}} 
+std\+::vector$<$ \mbox{\hyperlink{class_cercle}{Cercle}} $>$ {\bfseries point\+\_\+arrive}
+\item 
+\mbox{\Hypertarget{class_jeu_a312c2f0390dfcf4ae5508d3232ab5e0f}\label{class_jeu_a312c2f0390dfcf4ae5508d3232ab5e0f}} 
+int {\bfseries v\+\_\+last\+\_\+niveau}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_jeu_a4b5b107671761a6bb963475bf4ecc8dd}\label{class_jeu_a4b5b107671761a6bb963475bf4ecc8dd}} 
+\index{Jeu@{Jeu}!get\+Terrain@{get\+Terrain}}
+\index{get\+Terrain@{get\+Terrain}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Terrain()}{getTerrain()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain}{Terrain}} \& Jeu\+::get\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+les gets et les sets 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/core/Jeu.\+h\item 
+src/core/Jeu.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{class_rectangle}{}\section{Référence de la classe Rectangle}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+Graphe d\textquotesingle{}héritage de Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rectangle_a4f1cd06cacbf4044d1d8cf500c230750}\label{class_rectangle_a4f1cd06cacbf4044d1d8cf500c230750}} 
+\mbox{\hyperlink{class_rectangle_a4f1cd06cacbf4044d1d8cf500c230750}{Rectangle}} (const Vec2 \&\+\_\+pos\+Min=Vec2(0, 0), unsigned int w=1, unsigned int h=1)
+\begin{DoxyCompactList}\small\item\em cree un rectangle avec \+\_\+pos\+Min comme pos et largeur w et hauteur h \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a4689a7041fef3b935a2c5e9129f9dfb5}\label{class_rectangle_a4689a7041fef3b935a2c5e9129f9dfb5}} 
+\mbox{\hyperlink{class_rectangle_a4689a7041fef3b935a2c5e9129f9dfb5}{Rectangle}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&rec)
+\begin{DoxyCompactList}\small\item\em constructeur par copie \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}\label{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}} 
+\mbox{\hyperlink{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}{$\sim$\+Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em par default \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_af9782cc2a5f34744beda1443efcddccc}\label{class_rectangle_af9782cc2a5f34744beda1443efcddccc}} 
+Vec2 \mbox{\hyperlink{class_rectangle_af9782cc2a5f34744beda1443efcddccc}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em get/set pour la position max et min \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a91792d1be723462563766efd4bb382de}\label{class_rectangle_a91792d1be723462563766efd4bb382de}} 
+void {\bfseries set\+Pos} (const Vec2 \&pos)
+\item 
+\mbox{\Hypertarget{class_rectangle_abd59609e7c494d57f74b1ee46df33f80}\label{class_rectangle_abd59609e7c494d57f74b1ee46df33f80}} 
+unsigned int {\bfseries get\+Width} () const
+\item 
+\mbox{\Hypertarget{class_rectangle_a5bfb002e7628599a47ad4fad1b4fd3c1}\label{class_rectangle_a5bfb002e7628599a47ad4fad1b4fd3c1}} 
+unsigned int {\bfseries get\+Height} () const
+\item 
+\mbox{\Hypertarget{class_rectangle_a65135fe30f29ad6893695e13cee0658c}\label{class_rectangle_a65135fe30f29ad6893695e13cee0658c}} 
+void {\bfseries set\+Width} (unsigned int)
+\item 
+\mbox{\Hypertarget{class_rectangle_aa293da261bdf9580f80c349c772648b1}\label{class_rectangle_aa293da261bdf9580f80c349c772648b1}} 
+void {\bfseries set\+Height} (unsigned int)
+\item 
+\mbox{\Hypertarget{class_rectangle_ae8bf56fea5536645968d0e66aa8da2b7}\label{class_rectangle_ae8bf56fea5536645968d0e66aa8da2b7}} 
+bool \mbox{\hyperlink{class_rectangle_ae8bf56fea5536645968d0e66aa8da2b7}{est\+Dans}} (const \mbox{\hyperlink{class_cercle}{Cercle}} \&c) const
+\begin{DoxyCompactList}\small\item\em verifie si un cercle est dans un rectangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a8e790c85174f9706bbb4be5255a98e42}\label{class_rectangle_a8e790c85174f9706bbb4be5255a98e42}} 
+void \mbox{\hyperlink{class_rectangle_a8e790c85174f9706bbb4be5255a98e42}{sauver}} (int fd) const
+\begin{DoxyCompactList}\small\item\em enregistrer le terrain dans un file descripteur. le format est \char`\"{}pos.\+x\textquotesingle{} \textquotesingle{}pos.\+y\textquotesingle{} \textquotesingle{}w\textquotesingle{} \textquotesingle{}h\textquotesingle{}\textbackslash{}n\textquotesingle{}\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_ae4e6d7f9ff84af1a7c11b62bff7c31b5}\label{class_rectangle_ae4e6d7f9ff84af1a7c11b62bff7c31b5}} 
+void \mbox{\hyperlink{class_rectangle_ae4e6d7f9ff84af1a7c11b62bff7c31b5}{charger}} (int fd)
+\begin{DoxyCompactList}\small\item\em charge le terrain à d\textquotesingle{}un file descripteur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rectangle_a77b408f42c985329c92cf4017c0cccbf}\label{class_rectangle_a77b408f42c985329c92cf4017c0cccbf}} 
+Vec2 {\bfseries pos}
+\item 
+\mbox{\Hypertarget{class_rectangle_acd28f1ca4b37a5563ca04900a04e6a61}\label{class_rectangle_acd28f1ca4b37a5563ca04900a04e6a61}} 
+unsigned int {\bfseries w}
+\item 
+\mbox{\Hypertarget{class_rectangle_a1f6826771367cf8bbc891002879af25a}\label{class_rectangle_a1f6826771367cf8bbc891002879af25a}} 
+unsigned int {\bfseries h}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rectangle_a4ad36cfac2439cc552d60271d657b756}\label{class_rectangle_a4ad36cfac2439cc552d60271d657b756}} 
+std\+::ostream \& \mbox{\hyperlink{class_rectangle_a4ad36cfac2439cc552d60271d657b756}{operator$<$$<$}} (std\+::ostream \&flux, const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&r)
+\begin{DoxyCompactList}\small\item\em surcharge pour des flux de sortie comme cout$<$$<$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_ac8aa7e7afae9a4ff96c594710019e9f5}\label{class_rectangle_ac8aa7e7afae9a4ff96c594710019e9f5}} 
+std\+::istream \& \mbox{\hyperlink{class_rectangle_ac8aa7e7afae9a4ff96c594710019e9f5}{operator$>$$>$}} (std\+::istream \&flux, \mbox{\hyperlink{class_rectangle}{Rectangle}} \&r)
+\begin{DoxyCompactList}\small\item\em surcharge pour des fllux d\textquotesingle{}entrée comme cin$>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/base/Rectangle.\+h\item 
+src/base/Rectangle.\+cpp\end{DoxyCompactItemize}

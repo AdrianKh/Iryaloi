@@ -1,0 +1,40 @@
+{
+    "dependance_h":[
+        "Vec2.h",
+        "Color.h",
+        "Cercle.h",
+        "Camera.h",
+        "Terrain.h",
+        "Rectangle.h",
+        "FenetreSFML.h"
+    ],
+    "dependance_cpp":[
+        "Vec2.cpp",
+        "Color.cpp",
+        "Cercle.cpp",
+        "Camera.cpp",
+        "Terrain.cpp",
+        "Rectanlge.cpp",
+        "FenetreSFML.cpp"
+    ],
+    "gen_obj":[
+        "src/%.cpp",
+        "src/base/%.cpp",
+        "src/core/%.cpp",
+        "src/sfml/%.cpp"
+    ],
+    "projects":[
+        {
+            "bin": "mainTerrain",
+            "cpp": "mainTerrain.cpp"
+        },
+        {
+            "bin": "mainJoueur",
+            "cpp": "mainJoueur.cpp"
+        }
+    ],
+    "CC": "g++",
+    "INCLUDE_DIR": "-I/usr/include/ -I./src -I./src/sdl -I./src/sfml -I./src/base -I./src/core -I./src/txt",
+    "INCLUDE_LIB": "-lsfml-window -lsfml-system -lsfml-graphics",
+    "CPP_FLAGS": "-Wall -ggdb -std=c++14"
+}

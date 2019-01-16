@@ -1,0 +1,88 @@
+\hypertarget{socklib_8hpp}{}\section{Référence du fichier src/base/socklib.hpp}
+\label{socklib_8hpp}\index{src/base/socklib.\+hpp@{src/base/socklib.\+hpp}}
+
+
+fichier contenant les fonctions de créations de socket et les fonctions de gestion d\textquotesingle{}erreur  
+
+
+{\ttfamily \#include $<$cerrno$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\subsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesocklib}{socklib}}
+\begin{DoxyCompactList}\small\item\em espace de nom général \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{socklib_8hpp_a1453d82227a8342fea2b5cf8f8d74dbc}{exit\+\_\+error}}(msg,  cond,  errnum)~\mbox{\hyperlink{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}{socklib\+::\+\_\+\+\_\+error\+\_\+}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (msg), cond, errnum, true)
+\begin{DoxyCompactList}\small\item\em fonction de test et de génération d\textquotesingle{}erreur \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{socklib_8hpp_a8bcb357083c8c3b9443156cf9ed2dc82}{warning\+\_\+error}}(msg,  cond,  errnum)~\mbox{\hyperlink{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}{socklib\+::\+\_\+\+\_\+error\+\_\+}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (msg), cond, errnum, false)
+\begin{DoxyCompactList}\small\item\em fonction de test provoquant un warning \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}{socklib\+::\+\_\+\+\_\+error\+\_\+}} (const char $\ast$file, const int ligne, const std\+::string \&msg, bool cond, int errnum, bool exception)
+\begin{DoxyCompactList}\small\item\em fonction générique de la gestion d\textquotesingle{}erreur \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacesocklib_af229dcfe18deb451a8163a02ea5a3b06}{socklib\+::\+Cree\+Socket\+Serveur}} (const std\+::string \&port)
+\begin{DoxyCompactList}\small\item\em Cree une socket d\textquotesingle{}attente pour le serveur sur le port \textquotesingle{}\textquotesingle{}port\textquotesingle{}\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacesocklib_a426a4d6e2fbcf559659e88607f0473f7}{socklib\+::\+Cree\+Socket\+Client}} (const std\+::string \&server, const std\+::string \&port)
+\begin{DoxyCompactList}\small\item\em Crée une socket de client en se connectant à un serveur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacesocklib_a56cdbced316496706a18df3f6a62d28f}{socklib\+::\+Accept\+Connexion}} (int s)
+\begin{DoxyCompactList}\small\item\em Accepte un nouveau client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+fichier contenant les fonctions de créations de socket et les fonctions de gestion d\textquotesingle{}erreur 
+
+
+
+\subsection{Documentation des macros}
+\mbox{\Hypertarget{socklib_8hpp_a1453d82227a8342fea2b5cf8f8d74dbc}\label{socklib_8hpp_a1453d82227a8342fea2b5cf8f8d74dbc}} 
+\index{socklib.\+hpp@{socklib.\+hpp}!exit\+\_\+error@{exit\+\_\+error}}
+\index{exit\+\_\+error@{exit\+\_\+error}!socklib.\+hpp@{socklib.\+hpp}}
+\subsubsection{\texorpdfstring{exit\+\_\+error}{exit\_error}}
+{\footnotesize\ttfamily \#define exit\+\_\+error(\begin{DoxyParamCaption}\item[{}]{msg,  }\item[{}]{cond,  }\item[{}]{errnum }\end{DoxyParamCaption})~\mbox{\hyperlink{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}{socklib\+::\+\_\+\+\_\+error\+\_\+}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (msg), cond, errnum, true)}
+
+
+
+fonction de test et de génération d\textquotesingle{}erreur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em msg} & \+: message à afficher \\
+\hline
+{\em cond} & \+: condition d\textquotesingle{}erreur \\
+\hline
+{\em errnum} & \+: numéro de l\textquotesingle{}erreur système ou 0 s\textquotesingle{}il n\textquotesingle{}y en a pas.\\
+\hline
+\end{DoxyParams}
+Cette fonction affiche le texte d\textquotesingle{}erreur {\ttfamily msg} sur la sortie d\textquotesingle{}erreur et lance une exception. Si un code d\textquotesingle{}erreur {\ttfamily errnum} différent de 0 est fourni, l\textquotesingle{}exception générée est une erreur système (std\+::system\+\_\+error) dont {\ttfamily errnum} est le code d\textquotesingle{}erreur. Sinon, l\textquotesingle{}exception est une std\+::runtime\+\_\+error dont {\ttfamily msg} est le message.
+
+Par exemple le code suivant ouvre un FD en écriture en créant le fichier {\ttfamily toto.\+txt} et teste sa création et génère une exception système en cas d\textquotesingle{}erreur 
+\begin{DoxyCode}
+fdout = open(\textcolor{stringliteral}{"toto.txt"}, O\_CREAT|O\_WRONLY, S\_IRUSR|S\_IWUSR);
+\mbox{\hyperlink{socklib_8hpp_a1453d82227a8342fea2b5cf8f8d74dbc}{exit\_error}}(\textcolor{stringliteral}{"Création du fichier"}, fdout==-1, errno);
+\end{DoxyCode}
+ \mbox{\Hypertarget{socklib_8hpp_a8bcb357083c8c3b9443156cf9ed2dc82}\label{socklib_8hpp_a8bcb357083c8c3b9443156cf9ed2dc82}} 
+\index{socklib.\+hpp@{socklib.\+hpp}!warning\+\_\+error@{warning\+\_\+error}}
+\index{warning\+\_\+error@{warning\+\_\+error}!socklib.\+hpp@{socklib.\+hpp}}
+\subsubsection{\texorpdfstring{warning\+\_\+error}{warning\_error}}
+{\footnotesize\ttfamily \#define warning\+\_\+error(\begin{DoxyParamCaption}\item[{}]{msg,  }\item[{}]{cond,  }\item[{}]{errnum }\end{DoxyParamCaption})~\mbox{\hyperlink{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}{socklib\+::\+\_\+\+\_\+error\+\_\+}}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, (msg), cond, errnum, false)}
+
+
+
+fonction de test provoquant un warning 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em msg} & \+: message à afficher \\
+\hline
+{\em cond} & \+: condition d\textquotesingle{}erreur \\
+\hline
+{\em errnum} & \+: numéro de l\textquotesingle{}erreur système ou 0 s\textquotesingle{}il n\textquotesingle{}y en a pas.\\
+\hline
+\end{DoxyParams}
+teste la condition cond et affiche un warning.
+
+Cette fonction affiche le texte d\textquotesingle{}erreur {\ttfamily msg} sur la sortie d\textquotesingle{}erreur. Si un code d\textquotesingle{}erreur {\ttfamily errnum} différent de 0 est fourni, l\textquotesingle{}exception générée est une erreur système (std\+::system\+\_\+error) dont {\ttfamily errnum} est le code d\textquotesingle{}erreur. Sinon, l\textquotesingle{}execption est une std\+::runtime\+\_\+error dont {\ttfamily msg} est le message. 

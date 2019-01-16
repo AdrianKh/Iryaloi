@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Iryal.io:  Fichier source de src/base/Image.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Iryal.io
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0af1587c8378955de40f48b4bd1869f0.html">base</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Image.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_image.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_image.html">Image</a>{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::string lien;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a>(<span class="keyword">const</span> std::string &amp;_lien);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * _lien);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="class_image.html">Image</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_image.html#a01e7f7086e157349f449e0f3f1843d86">set_lien</a>(<span class="keyword">const</span> std::string &amp;_lien);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_image.html#a01e7f7086e157349f449e0f3f1843d86">set_lien</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * _lien);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_image.html#a73850779b4e32fbe214f5c3fad620854">valide</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string <a class="code" href="class_image.html#aba8f03a51b8b00ca960f20b6815e558f">get_lien</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_image.html#ae2379b7f0c93169809b3b0de1d3046fc">print</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="class_image.html">Image</a> Default();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="class_image.html">Image</a> Wall1();</div><div class="ttc" id="class_image_html_a01e7f7086e157349f449e0f3f1843d86"><div class="ttname"><a href="class_image.html#a01e7f7086e157349f449e0f3f1843d86">Image::set_lien</a></div><div class="ttdeci">void set_lien(const std::string &amp;_lien)</div><div class="ttdoc">met à jour le lien vers l&amp;#39;image </div><div class="ttdef"><b>Definition:</b> Image.cpp:26</div></div>
+<div class="ttc" id="class_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdoc">la classe contoent le lien vers une image dans une chaine de tableau </div><div class="ttdef"><b>Definition:</b> Image.h:8</div></div>
+<div class="ttc" id="class_image_html_a58edd1c45b4faeb5f789b0d036d02313"><div class="ttname"><a href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image::Image</a></div><div class="ttdeci">Image()</div><div class="ttdoc">crée un image par default &quot;data/img/default.png&quot; </div><div class="ttdef"><b>Definition:</b> Image.cpp:12</div></div>
+<div class="ttc" id="class_image_html_ae2379b7f0c93169809b3b0de1d3046fc"><div class="ttname"><a href="class_image.html#ae2379b7f0c93169809b3b0de1d3046fc">Image::print</a></div><div class="ttdeci">void print() const</div><div class="ttdoc">affiche le de l&amp;#39;image </div><div class="ttdef"><b>Definition:</b> Image.cpp:48</div></div>
+<div class="ttc" id="class_image_html_aba8f03a51b8b00ca960f20b6815e558f"><div class="ttname"><a href="class_image.html#aba8f03a51b8b00ca960f20b6815e558f">Image::get_lien</a></div><div class="ttdeci">std::string get_lien() const</div><div class="ttdoc">retourne le lien </div><div class="ttdef"><b>Definition:</b> Image.cpp:34</div></div>
+<div class="ttc" id="class_image_html_a73850779b4e32fbe214f5c3fad620854"><div class="ttname"><a href="class_image.html#a73850779b4e32fbe214f5c3fad620854">Image::valide</a></div><div class="ttdeci">bool valide() const</div><div class="ttdef"><b>Definition:</b> Image.cpp:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,56 @@
+\hypertarget{class_terrain}{}\section{Référence de la classe Terrain}
+\label{class_terrain}\index{Terrain@{Terrain}}
+
+
+un terrain possède une position, un largeur et une hauteur.  
+
+
+
+
+{\ttfamily \#include $<$Terrain.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Terrain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_terrain}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_terrain_a3b01a8d47de9ad7b913236c1ab9f62ce}\label{class_terrain_a3b01a8d47de9ad7b913236c1ab9f62ce}} 
+\mbox{\hyperlink{class_terrain_a3b01a8d47de9ad7b913236c1ab9f62ce}{Terrain}} (const Vec2 \&\+\_\+pos\+Min=Vec2(0, 0), unsigned int w=1, unsigned int h=1)
+\begin{DoxyCompactList}\small\item\em Constructeur par default utilise celle du \mbox{\hyperlink{class_rectangle}{Rectangle}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_terrain_a193cb653a018575760d02e2819cb550c}\label{class_terrain_a193cb653a018575760d02e2819cb550c}} 
+{\bfseries Terrain} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&rec)
+\item 
+void \mbox{\hyperlink{class_terrain_a9546059cb210f4e4f90905ba9d0f23ea}{collision}} (\mbox{\hyperlink{class_cercle}{Cercle}} \&) const
+\begin{DoxyCompactList}\small\item\em verifie si le cercle sort du terrain dans le cercle sort il le remet dans le terrain \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_terrain_a981fe71718eaa146e0b8fe7bb771b38c}\label{class_terrain_a981fe71718eaa146e0b8fe7bb771b38c}} 
+void \mbox{\hyperlink{class_terrain_a981fe71718eaa146e0b8fe7bb771b38c}{collision}} (\mbox{\hyperlink{class_rectangle}{Rectangle}} \&)
+\begin{DoxyCompactList}\small\item\em verifie si le \mbox{\hyperlink{class_rectangle}{Rectangle}} sort du terrain dans le cercle sort il le remet dans le terrain \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Membres hérités additionnels}
+
+
+\subsection{Description détaillée}
+un terrain possède une position, un largeur et une hauteur. 
+
+les accesseur et les mutateur sont les meme que le class \mbox{\hyperlink{class_rectangle}{Rectangle}}. en plus des focntions de la classe \mbox{\hyperlink{class_rectangle}{Rectangle}} le terrain dectect ausssi les cillisions et ainsi ne permet pas aux objets de sortir du terrain 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_terrain_a9546059cb210f4e4f90905ba9d0f23ea}\label{class_terrain_a9546059cb210f4e4f90905ba9d0f23ea}} 
+\index{Terrain@{Terrain}!collision@{collision}}
+\index{collision@{collision}!Terrain@{Terrain}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily void Terrain\+::collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cercle}{Cercle}} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+verifie si le cercle sort du terrain dans le cercle sort il le remet dans le terrain 
+
+empeche la sortie du terrain en replaçant l\textquotesingle{}objet à sa posiotion precedente . 
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/core/Terrain.\+h\item 
+src/core/Terrain.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,200 @@
+\hypertarget{class_fenetre}{}\section{Référence de la classe Fenetre}
+\label{class_fenetre}\index{Fenetre@{Fenetre}}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fenetre_a532a304e0c331e9e9fad1fe8b4218a96}{Fenetre}} (const std\+::string \&Titre, const unsigned int largeur, const unsigned int hauteur)
+\begin{DoxyCompactList}\small\item\em appelle init\+Sdl2 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a5fc27ac2951202e28884a530f8be4074}\label{class_fenetre_a5fc27ac2951202e28884a530f8be4074}} 
+bool \mbox{\hyperlink{class_fenetre_a5fc27ac2951202e28884a530f8be4074}{est\+Ferme}} ()
+\begin{DoxyCompactList}\small\item\em retourne vraie si la est fermé \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_acccbffabacb01f96b3e246c0b586f493}\label{class_fenetre_acccbffabacb01f96b3e246c0b586f493}} 
+bool {\bfseries is\+Open} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_a8dcb43a897c9f8b262f7d875bf8cb213}\label{class_fenetre_a8dcb43a897c9f8b262f7d875bf8cb213}} 
+unsigned int {\bfseries get\+Largeur} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_ae3fe2005d680e693f08d776bd27ef92c}\label{class_fenetre_ae3fe2005d680e693f08d776bd27ef92c}} 
+unsigned int {\bfseries get\+Hauteur} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_aedde429fa972890645f015a504c7f7b9}\label{class_fenetre_aedde429fa972890645f015a504c7f7b9}} 
+void \mbox{\hyperlink{class_fenetre_aedde429fa972890645f015a504c7f7b9}{color}} (\mbox{\hyperlink{class_couleur}{Couleur}} c)
+\begin{DoxyCompactList}\small\item\em met la couleur d\textquotesingle{}affichage des objets \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_abf9778019ebfeba6f45315ffe520598e}\label{class_fenetre_abf9778019ebfeba6f45315ffe520598e}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries get\+Renderer} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_a504a0a670f9c18037a9eee234d89a4c1}\label{class_fenetre_a504a0a670f9c18037a9eee234d89a4c1}} 
+void \mbox{\hyperlink{class_fenetre_a504a0a670f9c18037a9eee234d89a4c1}{clear}} (const \mbox{\hyperlink{class_couleur}{Couleur}} c)
+\begin{DoxyCompactList}\small\item\em éfface la fond avec la \mbox{\hyperlink{class_couleur}{Couleur}} passe en param. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a193e7e6feddcbf05873467fa3dfc815c}\label{class_fenetre_a193e7e6feddcbf05873467fa3dfc815c}} 
+void \mbox{\hyperlink{class_fenetre_a193e7e6feddcbf05873467fa3dfc815c}{clear}} ()
+\begin{DoxyCompactList}\small\item\em éfface la fond en blanc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a662dca6b140ef7effb43b8ee2269ff6b}\label{class_fenetre_a662dca6b140ef7effb43b8ee2269ff6b}} 
+void \mbox{\hyperlink{class_fenetre_a662dca6b140ef7effb43b8ee2269ff6b}{affiche\+Render}} ()
+\begin{DoxyCompactList}\small\item\em affiche le renderer sur la fenetre créé. c\textquotesingle{}est à dire afficher tous les objet dessinés avec draw \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a07f1ccdcb15d92d007c2b487cb1b29d0}\label{class_fenetre_a07f1ccdcb15d92d007c2b487cb1b29d0}} 
+void \mbox{\hyperlink{class_fenetre_a07f1ccdcb15d92d007c2b487cb1b29d0}{gerer\+Evenement}} ()
+\begin{DoxyCompactList}\small\item\em gère les evenements S\+DL. Ex\+: souris, clavier, fermer la fenetre --- !! Important les fonctions key\+Pressed(),\mbox{\hyperlink{class_fenetre_a201b7541c17b4915db1d4b6701b0d947}{get\+Last\+Key()}} depend du \mbox{\hyperlink{class_fenetre_a07f1ccdcb15d92d007c2b487cb1b29d0}{gerer\+Evenement()}} !! --- donc il appeler \mbox{\hyperlink{class_fenetre_a07f1ccdcb15d92d007c2b487cb1b29d0}{gerer\+Evenement()}} pour pouvoir les utiliser \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_aa2272c38f9dcd34a4e819ab26d22d881}{fps}} (unsigned char fps, const Uint32 temps\+De\+Calcule)
+\begin{DoxyCompactList}\small\item\em determine le nombre d\textquotesingle{}image par seconde \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fenetre_ada8b47211931bbcd96d90a6951b6ac81}{affiche\+Rectangle}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&r)
+\item 
+void \mbox{\hyperlink{class_fenetre_a38f16af5be9a0283ab14dec00a8b5b9e}{draw}} (const \mbox{\hyperlink{class_cercle}{Cercle}} \&c)
+\item 
+void \mbox{\hyperlink{class_fenetre_a5d99f4f07fa6a89793f67303b98fb526}{draw}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&r)
+\item 
+\mbox{\Hypertarget{class_fenetre_af793563adefc47c84b2245716c874241}\label{class_fenetre_af793563adefc47c84b2245716c874241}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_terrain}{Terrain}} \&t)
+\item 
+\mbox{\Hypertarget{class_fenetre_a8334b347ee5515e003ed768a4de45044}\label{class_fenetre_a8334b347ee5515e003ed768a4de45044}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_camera}{Camera}} \&c)
+\item 
+\mbox{\Hypertarget{class_fenetre_a4415d03fcf553707e682475280808788}\label{class_fenetre_a4415d03fcf553707e682475280808788}} 
+void {\bfseries draw} (const \mbox{\hyperlink{class_mur}{Mur}} \&m)
+\item 
+\mbox{\Hypertarget{class_fenetre_a833e8f2f7b25181553199a839c11e5c6}\label{class_fenetre_a833e8f2f7b25181553199a839c11e5c6}} 
+void {\bfseries draw} (\mbox{\hyperlink{class_joueur}{Joueur}} \&j)
+\item 
+\mbox{\Hypertarget{class_fenetre_ab0f36afaa322a834539623d89a5a9ce6}\label{class_fenetre_ab0f36afaa322a834539623d89a5a9ce6}} 
+void {\bfseries set\+Icone} (const std\+::string \&chemin)
+\item 
+\mbox{\Hypertarget{class_fenetre_a6e56597205e2a4f5bd9d9c3b1c526139}\label{class_fenetre_a6e56597205e2a4f5bd9d9c3b1c526139}} 
+void \mbox{\hyperlink{class_fenetre_a6e56597205e2a4f5bd9d9c3b1c526139}{set\+Origine}} (Vec2 $\ast$origine)
+\begin{DoxyCompactList}\small\item\em met le repère dans la quelle les objets vont être dissigner modofie pas l\textquotesingle{}origine \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a2b8ce7464bca68921fa81a8feb81b536}\label{class_fenetre_a2b8ce7464bca68921fa81a8feb81b536}} 
+bool {\bfseries key\+Pressed} ()
+\item 
+\mbox{\Hypertarget{class_fenetre_a201b7541c17b4915db1d4b6701b0d947}\label{class_fenetre_a201b7541c17b4915db1d4b6701b0d947}} 
+const char \mbox{\hyperlink{class_fenetre_a201b7541c17b4915db1d4b6701b0d947}{get\+Last\+Key}} ()
+\begin{DoxyCompactList}\small\item\em renvoie la dernière touche appouyer dans le cas il n\textquotesingle{}y a pas touche renvoie ex\+: U up, D down, L left, R right \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a97779c8c1ff14f554ec9f39be1a6a7dd}\label{class_fenetre_a97779c8c1ff14f554ec9f39be1a6a7dd}} 
+Vec2 {\bfseries mouse\+Pos} () const
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_fenetre_a509d4b42356b63541d23532f79d65d7e}{init\+Sdl2}} (const std\+::string \&Titre, const unsigned int largeur, const unsigned int hauteur)
+\begin{DoxyCompactList}\small\item\em initsialise sdl2. crée une fenetre et un renderer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fenetre_a81c19f82177a6965c65636968c504f5a}\label{class_fenetre_a81c19f82177a6965c65636968c504f5a}} 
+void {\bfseries clear\+Events} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fenetre_a2ee267d5dec1a7b83562149e607641b9}\label{class_fenetre_a2ee267d5dec1a7b83562149e607641b9}} 
+bool {\bfseries quite}
+\item 
+\mbox{\Hypertarget{class_fenetre_a754610278e6d058040c269dc1458b077}\label{class_fenetre_a754610278e6d058040c269dc1458b077}} 
+S\+D\+L\+\_\+\+Window $\ast$ {\bfseries fenetre}
+\item 
+\mbox{\Hypertarget{class_fenetre_a2604e846f72a8cfda56eb2e32bcbaf83}\label{class_fenetre_a2604e846f72a8cfda56eb2e32bcbaf83}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries renderer}
+\item 
+\mbox{\Hypertarget{class_fenetre_a3e48790cb09f6821f40d62da9303c924}\label{class_fenetre_a3e48790cb09f6821f40d62da9303c924}} 
+unsigned int {\bfseries largeur}
+\item 
+\mbox{\Hypertarget{class_fenetre_a4b84da27ec5957d63fcf0ae2049fa458}\label{class_fenetre_a4b84da27ec5957d63fcf0ae2049fa458}} 
+unsigned int {\bfseries hauteur}
+\item 
+\mbox{\Hypertarget{class_fenetre_a6ae738053171f483eca77c54396eed70}\label{class_fenetre_a6ae738053171f483eca77c54396eed70}} 
+std\+::string {\bfseries titre}
+\item 
+\mbox{\Hypertarget{class_fenetre_a9489484b10b21f8d3f3f5bc5a3fe3729}\label{class_fenetre_a9489484b10b21f8d3f3f5bc5a3fe3729}} 
+S\+D\+L\+\_\+\+Event {\bfseries event}
+\item 
+\mbox{\Hypertarget{class_fenetre_a2c0f863e021033d4d47b7d1bcda0d6d3}\label{class_fenetre_a2c0f863e021033d4d47b7d1bcda0d6d3}} 
+\mbox{\hyperlink{class_couleur}{Couleur}} {\bfseries Couleur\+\_\+c}
+\item 
+\mbox{\Hypertarget{class_fenetre_ab72d03199b112a245cece0e9c660aeaf}\label{class_fenetre_ab72d03199b112a245cece0e9c660aeaf}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries icone}
+\item 
+\mbox{\Hypertarget{class_fenetre_ab8c6ea903ba940890a04da2eca8ca234}\label{class_fenetre_ab8c6ea903ba940890a04da2eca8ca234}} 
+Vec2 $\ast$ {\bfseries \+\_\+origine}
+\item 
+\mbox{\Hypertarget{class_fenetre_aac87278acef1ecfd6c07948f6d4b418a}\label{class_fenetre_aac87278acef1ecfd6c07948f6d4b418a}} 
+Vec2 {\bfseries pos\+Tmp}
+\item 
+\mbox{\Hypertarget{class_fenetre_afe14127a7d833e9d1b6bd56035faeca2}\label{class_fenetre_afe14127a7d833e9d1b6bd56035faeca2}} 
+bool {\bfseries keyboard\+Is\+Pressed}
+\item 
+\mbox{\Hypertarget{class_fenetre_ac21a7959c423481dfd4115ac70b50a7a}\label{class_fenetre_ac21a7959c423481dfd4115ac70b50a7a}} 
+S\+D\+L\+\_\+\+Scancode {\bfseries last\+Key\+Pressed}
+\item 
+\mbox{\Hypertarget{class_fenetre_ae46a9260c70796a8ec0ddd7b611c1fe6}\label{class_fenetre_ae46a9260c70796a8ec0ddd7b611c1fe6}} 
+std\+::queue$<$ S\+D\+L\+\_\+\+Scancode $>$ {\bfseries keys}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_fenetre_a532a304e0c331e9e9fad1fe8b4218a96}\label{class_fenetre_a532a304e0c331e9e9fad1fe8b4218a96}} 
+\index{Fenetre@{Fenetre}!Fenetre@{Fenetre}}
+\index{Fenetre@{Fenetre}!Fenetre@{Fenetre}}
+\subsubsection{\texorpdfstring{Fenetre()}{Fenetre()}}
+{\footnotesize\ttfamily Fenetre\+::\+Fenetre (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Titre,  }\item[{const unsigned int}]{largeur,  }\item[{const unsigned int}]{hauteur }\end{DoxyParamCaption})}
+
+
+
+appelle init\+Sdl2 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Titre} & de la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_fenetre_ada8b47211931bbcd96d90a6951b6ac81}\label{class_fenetre_ada8b47211931bbcd96d90a6951b6ac81}} 
+\index{Fenetre@{Fenetre}!affiche\+Rectangle@{affiche\+Rectangle}}
+\index{affiche\+Rectangle@{affiche\+Rectangle}!Fenetre@{Fenetre}}
+\subsubsection{\texorpdfstring{affiche\+Rectangle()}{afficheRectangle()}}
+{\footnotesize\ttfamily void Fenetre\+::affiche\+Rectangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{r }\end{DoxyParamCaption})}
+
+dessine un \mbox{\hyperlink{class_rectangle}{Rectangle}} parrapport à l\textquotesingle{}origine \mbox{\Hypertarget{class_fenetre_a38f16af5be9a0283ab14dec00a8b5b9e}\label{class_fenetre_a38f16af5be9a0283ab14dec00a8b5b9e}} 
+\index{Fenetre@{Fenetre}!draw@{draw}}
+\index{draw@{draw}!Fenetre@{Fenetre}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fenetre\+::draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cercle}{Cercle}} \&}]{c }\end{DoxyParamCaption})}
+
+dessine un \mbox{\hyperlink{class_cercle}{Cercle}} remplit de Couleur\+\_\+c parrapport à l\textquotesingle{}origine \mbox{\Hypertarget{class_fenetre_a5d99f4f07fa6a89793f67303b98fb526}\label{class_fenetre_a5d99f4f07fa6a89793f67303b98fb526}} 
+\index{Fenetre@{Fenetre}!draw@{draw}}
+\index{draw@{draw}!Fenetre@{Fenetre}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fenetre\+::draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{r }\end{DoxyParamCaption})}
+
+dessine un \mbox{\hyperlink{class_rectangle}{Rectangle}} remplit de Couleur\+\_\+c parrapport à l\textquotesingle{}origine \mbox{\Hypertarget{class_fenetre_aa2272c38f9dcd34a4e819ab26d22d881}\label{class_fenetre_aa2272c38f9dcd34a4e819ab26d22d881}} 
+\index{Fenetre@{Fenetre}!fps@{fps}}
+\index{fps@{fps}!Fenetre@{Fenetre}}
+\subsubsection{\texorpdfstring{fps()}{fps()}}
+{\footnotesize\ttfamily void Fenetre\+::fps (\begin{DoxyParamCaption}\item[{unsigned char}]{fps,  }\item[{const Uint32}]{temps\+De\+Calcule }\end{DoxyParamCaption})}
+
+
+
+determine le nombre d\textquotesingle{}image par seconde 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fps} & le nombre d\textquotesingle{}image et temps\+De\+Calcule temps pour tous les calcules ex\+: affichage, mise-\/à-\/jours des objets etc. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fenetre_a509d4b42356b63541d23532f79d65d7e}\label{class_fenetre_a509d4b42356b63541d23532f79d65d7e}} 
+\index{Fenetre@{Fenetre}!init\+Sdl2@{init\+Sdl2}}
+\index{init\+Sdl2@{init\+Sdl2}!Fenetre@{Fenetre}}
+\subsubsection{\texorpdfstring{init\+Sdl2()}{initSdl2()}}
+{\footnotesize\ttfamily bool Fenetre\+::init\+Sdl2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Titre,  }\item[{const unsigned int}]{largeur,  }\item[{const unsigned int}]{hauteur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+initsialise sdl2. crée une fenetre et un renderer 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Titre} & de la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/sdl/Fenetre.\+h\item 
+src/sdl/Fenetre.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+#include "Triangle.h"
+#include <cmath>
+
+Vec2 Triangle::getCote1() const{return cote1;}
+Vec2 Triangle::getCote2() const{return cote2;}
+Vec2 Triangle::getCote3() const{return cote3;}
+float Triangle::getAire() const{return aire;}
+Couleur Triangle::getCouleur() const{return couleur;}
+float Triangle::vitesse() const{return  vitesse;}
+
+void Triangle::setVitesse(const float & vitesse)
+{
+    this->vitesse= vitesse;
+}
+
+void setAire(const float & aire)
+{
+    this->aire=aire;
+}
+
+void Triangle::setCote1(const Vec2 & _cote1)
+{
+    this->cote1 = _cote1;
+}
+void Triangle::setCote2(const Vec2 & _cote2)
+{
+    this->cote2 = _cote2;
+}
+void Triangle::setCote3(const Vec2 & _cote3)
+{
+    this->cote3 = _cote3;
+}
+
+Triangle::Triangle()
+{
+    Triangle::initTriangle(0,0,0);
+}
+void Triangle::initTriangle(const Vect2 & c1,const Vect2 & c2,const Vect2 & c3 )
+{
+    setCote1(c1);
+    setCote2(c2);
+    setCote3(c3);
+    setVitesse(200);
+    float haut=(c3-((c1-c2)/2));
+    float air= (((c1-c2)*haut)/2);
+
+}
+

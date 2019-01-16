@@ -1,0 +1,117 @@
+\hypertarget{namespacesocklib}{}\section{Référence de l\textquotesingle{}espace de nommage socklib}
+\label{namespacesocklib}\index{socklib@{socklib}}
+
+
+espace de nom général  
+
+
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}{\+\_\+\+\_\+error\+\_\+}} (const char $\ast$file, const int ligne, const std\+::string \&msg, bool cond, int errnum, bool exception)
+\begin{DoxyCompactList}\small\item\em fonction générique de la gestion d\textquotesingle{}erreur \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacesocklib_af229dcfe18deb451a8163a02ea5a3b06}{Cree\+Socket\+Serveur}} (const std\+::string \&port)
+\begin{DoxyCompactList}\small\item\em Cree une socket d\textquotesingle{}attente pour le serveur sur le port \textquotesingle{}\textquotesingle{}port\textquotesingle{}\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacesocklib_a426a4d6e2fbcf559659e88607f0473f7}{Cree\+Socket\+Client}} (const std\+::string \&server, const std\+::string \&port)
+\begin{DoxyCompactList}\small\item\em Crée une socket de client en se connectant à un serveur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacesocklib_a56cdbced316496706a18df3f6a62d28f}{Accept\+Connexion}} (int s)
+\begin{DoxyCompactList}\small\item\em Accepte un nouveau client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+espace de nom général 
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}\label{namespacesocklib_aec23e1a0b60ca039283516d2305f799e}} 
+\index{socklib@{socklib}!\+\_\+\+\_\+error\+\_\+@{\+\_\+\+\_\+error\+\_\+}}
+\index{\+\_\+\+\_\+error\+\_\+@{\+\_\+\+\_\+error\+\_\+}!socklib@{socklib}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+error\+\_\+()}{\_\_error\_()}}
+{\footnotesize\ttfamily void socklib\+::\+\_\+\+\_\+error\+\_\+ (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{const int}]{ligne,  }\item[{const std\+::string \&}]{msg,  }\item[{bool}]{cond,  }\item[{int}]{errnum,  }\item[{bool}]{exception }\end{DoxyParamCaption})}
+
+
+
+fonction générique de la gestion d\textquotesingle{}erreur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em file,ligne} & \+: le nom et la ligne du fichier où a lieu l\textquotesingle{}erreur \\
+\hline
+{\em msg} & \+: le message à afficher en cas d\textquotesingle{}erreur \\
+\hline
+{\em cond} & \+: la condition (l\textquotesingle{}erreure est déclanchée si elle est vraie) \\
+\hline
+{\em errnum} & \+: code d\textquotesingle{}erreur système \\
+\hline
+{\em exception} & \+: si vrai envoie une exception en cas d\textquotesingle{}erreur, sinon, c\textquotesingle{}est just un warning \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacesocklib_a56cdbced316496706a18df3f6a62d28f}\label{namespacesocklib_a56cdbced316496706a18df3f6a62d28f}} 
+\index{socklib@{socklib}!Accept\+Connexion@{Accept\+Connexion}}
+\index{Accept\+Connexion@{Accept\+Connexion}!socklib@{socklib}}
+\subsubsection{\texorpdfstring{Accept\+Connexion()}{AcceptConnexion()}}
+{\footnotesize\ttfamily int socklib\+::\+Accept\+Connexion (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+Accepte un nouveau client. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em s} & \+: la socket d\textquotesingle{}attente du serveur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la socket de discution 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em une} & système error s\textquotesingle{}il y a un problème \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{namespacesocklib_a426a4d6e2fbcf559659e88607f0473f7}\label{namespacesocklib_a426a4d6e2fbcf559659e88607f0473f7}} 
+\index{socklib@{socklib}!Cree\+Socket\+Client@{Cree\+Socket\+Client}}
+\index{Cree\+Socket\+Client@{Cree\+Socket\+Client}!socklib@{socklib}}
+\subsubsection{\texorpdfstring{Cree\+Socket\+Client()}{CreeSocketClient()}}
+{\footnotesize\ttfamily int socklib\+::\+Cree\+Socket\+Client (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{server,  }\item[{const std\+::string \&}]{port }\end{DoxyParamCaption})}
+
+
+
+Crée une socket de client en se connectant à un serveur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em server,port} & \+: le serveur et le port à contacter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la socket de discution 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em une} & system\+\_\+error s\textquotesingle{}il y a un souci à la création ou une runtime\+\_\+error si le serveur ne peut pas être contacté \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{namespacesocklib_af229dcfe18deb451a8163a02ea5a3b06}\label{namespacesocklib_af229dcfe18deb451a8163a02ea5a3b06}} 
+\index{socklib@{socklib}!Cree\+Socket\+Serveur@{Cree\+Socket\+Serveur}}
+\index{Cree\+Socket\+Serveur@{Cree\+Socket\+Serveur}!socklib@{socklib}}
+\subsubsection{\texorpdfstring{Cree\+Socket\+Serveur()}{CreeSocketServeur()}}
+{\footnotesize\ttfamily int socklib\+::\+Cree\+Socket\+Serveur (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{port }\end{DoxyParamCaption})}
+
+
+
+Cree une socket d\textquotesingle{}attente pour le serveur sur le port \textquotesingle{}\textquotesingle{}port\textquotesingle{}\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em port} & \+: le port utilisé \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la socket d\textquotesingle{}attente 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em une} & system\+\_\+error s\textquotesingle{}il y a un soucis à la création ou une runtime\+\_\+error si le port est occupé ou ne peux pas être pris\\
+\hline
+\end{DoxyExceptions}
+En cas d\textquotesingle{}erreur, un message explicatif est affiché sur la sortie d\textquotesingle{}erreur standart 
